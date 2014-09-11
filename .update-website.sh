@@ -25,7 +25,7 @@ if [ "$TRAVIS_PULL_REQUEST" == "false" ] && [ "$TRAVIS_BRANCH" == "master" ]; th
     git add -f .
     git commit -m "Travis build $TRAVIS_BUILD_NUMBER pushed to geofisica1/gh-pages"
     echo -e "Pushing to gh-pages"
-    git push -fq origin master > /dev/null
+    git push -fq origin gh-pages > /dev/null
     echo -e "Uploaded generated files\n"
 else
     echo -e "This is a pull request, not copying files"
