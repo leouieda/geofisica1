@@ -7,6 +7,7 @@ AUTHOR = u'Leonardo Uieda'
 SITENAME = u'Geof\xedsica 1 - Bacharelado em Geologia'
 SITESUBTITLE = u'Universidade do Estado do Rio de Janeiro'
 SITEURL = ''
+RELATIVE_URLS = True
 
 TIMEZONE = u'America/Sao_Paulo'
 DEFAULT_LANG = u'pt'
@@ -14,8 +15,9 @@ DEFAULT_LANG = u'pt'
 PATH = 'lessons'
 ARTICLE_URL = '{slug}.html'
 ARTICLE_SAVE_AS = '{slug}.html'
-#PAGE_URL = '{slug}.html'
-#PAGE_SAVE_AS = '{slug}.html'
+PAGE_PATHS = ['pages']
+PAGE_URL = '{slug}.html'
+PAGE_SAVE_AS = '{slug}.html'
 
 STATIC_PATHS = ['images', 'notebooks']
 
@@ -40,10 +42,12 @@ FIGURE_NUMBERS = True
 
 THEME = 'theme'
 
-MENUITEMS = [
-    ['<i class="fa fa-home fa-lg" title="Página inicial"></i>', '/index.html'],
-    ['Introdução', '/introducao.html'],
+INTERNALLINKS = [
+    ['<i class="fa fa-home fa-lg" title="Página inicial"></i>', 'index.html'],
+    ['Introdução', 'introducao.html'],
     ]
+EXTERNALLINKS = []
+
 
 # This goes at the footer of the site
 COPYRIGHT_NOTICE = """
