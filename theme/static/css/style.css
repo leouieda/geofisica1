@@ -1,0 +1,191 @@
+body {
+    width: 70%;
+    margin: auto;
+    margin-top: 20px;
+    color: #424242;
+    background: #fafafa;
+    font-size: 12pt;
+    font-family: Verdana, sans-serif;
+}
+p, li {
+    line-height: 25px;
+}
+blockquote {
+    font-style: italic;
+}
+code {
+    background: #ececec;
+}
+a {
+    color: #2166ac;
+    text-decoration: none;
+}
+h2 {
+    font-size: 20pt;
+    margin-bottom: 5px;
+}
+h2 > a {
+    color: #424242;
+}
+h3 {
+    font-size: 16pt;
+    margin-bottom: 5px;
+}
+h3 > a {
+    color: #424242;
+}
+abbr {
+    font-size: 10pt;
+    border: none;
+}
+.content {
+    margin-top: 20px;
+}
+hr {
+    color: #d0d0d0;
+}
+
+/* Color for fontawesome icons */
+i.fa {
+    color: #424242;
+}
+a i.fa:hover {
+    color: #0571b0;
+}
+
+/* POST LIST ON FRONT PAGE */
+/* **************************************************************** */
+.lesson-list {
+    list-style-type: none;
+    padding: 0;
+}
+.lesson-list li {
+    border-bottom: 1px solid #d0d0d0;
+}
+
+/* HEADER */
+/* **************************************************************** */
+header h1 {
+    font-size: 20pt;
+    margin-bottom: 5px;
+}
+header aside {
+    font-size: 12pt;
+}
+header h1 > a {
+    color: #424242;
+}
+header nav {
+    margin-top: 20px;
+    background: #ca0020;
+}
+header ul {
+    width: 96%;
+    padding-left: 2%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    list-style-type: none;
+}
+header li {
+    font-size: 10pt;
+    display: inline;
+    text-transform: uppercase;
+    padding: 10px;
+    line-height: 15px;
+}
+header a {
+    color: #ffffff;
+}
+header a:hover {
+    color: #333;
+}
+header i.fa {
+    color: #ffffff;
+}
+header i.fa:hover {
+    color: #333;
+}
+/* **************************************************************** */
+
+/* FOOTER */
+/* **************************************************************** */
+footer {
+    text-align: center;
+    margin-top: 60px;
+    margin-bottom: 20px;
+    font-size: 10pt;
+}
+/* **************************************************************** */
+
+/* MEDIA QUERIES */
+/* **************************************************************** */
+@media screen and (max-width: 1000px) {
+    body {
+        width: 95%;
+    }
+    header nav {
+        margin-left: -2.5%;
+        width: 105%;
+    }
+}
+/* **************************************************************** */
+
+/* FIGURES AND IMAGES */
+/* **************************************************************** */
+img {
+    max-width: 100%;
+    height: auto;
+    margin: 1em 1em 1em 0;
+}
+img.align-right {
+    float: right;
+    margin: 1em 0 1em 1em;
+}
+img.align-left {
+    float: left;
+    margin: 1em 1em 1em 0;
+}
+
+.figure {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid #bbb;
+    border-radius: 3px;
+    box-shadow: 4px 4px 4px 0px rgba(128, 128, 128, 0.5);
+    padding: 0px;
+    float: left;
+    margin: 0 1em 1em 0;
+}
+.figure.align-right {
+    float: right;
+    margin: 0 0 1em 1em;
+}
+.figure.align-left {
+    float: left;
+}
+.figure img {
+    max-width: 95%;
+    height: auto;
+    border: none;
+    border-radius: 0;
+    padding: 0;
+    margin: 10px;
+    box-shadow: none;
+    float: left;
+}
+.figure p.caption {
+    margin: 0;
+    font-size: 90%;
+    padding: 10px;
+    float: left;
+    text-align: left;
+    font-style: italic;
+}
+.figure div.legend {
+    padding: 10px;
+    font-size: 90%;
+    color: #aaa;
+    font-style: italic;
+    float: left;
+}
+/* **************************************************************** */

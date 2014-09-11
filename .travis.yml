@@ -1,0 +1,15 @@
+language: python
+script:
+- make publish
+before_install:
+- git clone --depth=20 --recursive https://github.com/getpelican/pelican-plugins.git
+  ../pelican-plugins
+install:
+- sudo apt-get update
+- sudo apt-get install nodejs
+- pip install pelican markdown ipython pillow beautifulsoup4
+after_success:
+- bash .update-website.sh
+env:
+  global:
+    secure: G8dosf5CTexBI8aw4fXM8r3x2MDUrp75lpq8td9AQIHMhnaHCv0V7l3Du1VmHddILsPPQa+MGU8cGGrQn6t2TRsVZuvrKqXa8JS4I/hLtMVaFvHUDOqPSa2uk1NlWiYsU1bHRqUL40VCmY6vfS+EsWlf1FaJxhEkkLE26p3ww5I=

@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+    {% for page in pages if page.title == "index" %}
+    {{ page.content }}
+    {% endfor %}
+
+{% endblock %}

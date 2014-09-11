@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+{% block content %}
+<h2>Lições de {{ category }}</h2>
+
+<ul class="lesson-list">
+{% for cat, articles in categories if cat == category %}
+    {% for article in articles %}
+        <li>
+        <h3><a href="{{ SITEURL }}/{{ article.url }}" rel="bookmark"
+            title="Permalink to {{ article.title|striptags }}">{{ article.title
+            }}</a></h3>
+        <div> {{ article.summary }} </div>
+        </li>
+    {% endfor %}
+{% endfor %}
+</ul>
+
+{% endblock %}
+
