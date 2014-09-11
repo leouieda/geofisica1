@@ -10,6 +10,7 @@
         {% endif %}
         <meta name="author" content="{{ AUTHOR }}"/>
     {% endblock %}
+
     <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0"/>
 
     <title>{% block title %}{{ SITENAME }}{% endblock title %}</title>
@@ -32,10 +33,6 @@
         {{ page.latex }}
     {% endif %}
 
-    <!-- To include IPython notebook CSS -->
-    {% if EXTRA_HEADER %}
-    {{ EXTRA_HEADER }}
-    {% endif %}
 {% endblock head %}
 </head>
 

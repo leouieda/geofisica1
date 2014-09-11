@@ -1,3 +1,4 @@
 output
 cache
 *.pyc
+.ipynb_checkpoints

@@ -25,7 +25,8 @@ $(OUTPUTDIR)/%.html:
 
 clean:
 	[ ! -d $(OUTPUTDIR) ] || find $(OUTPUTDIR) -mindepth 1 -delete
-	rm -f *.pyc _nb_header.html
+	rm -f *.pyc
+	rm -rf cache
 
 regenerate: clean
 	$(PELICAN) -r $(INPUTDIR) -o $(OUTPUTDIR) -s $(CONFFILE) $(PELICANOPTS)
