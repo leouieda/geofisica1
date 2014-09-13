@@ -41,6 +41,7 @@ FIGURE_NUMBERS = True
 THEME = 'theme'
 
 INTERNALLINKS = [
+    ['Sobre', 'index.html'],
     ['Introdução', 'lessons/misc/introducao.html'],
     ['Gravimetria', 'category/gravimetria.html'],
     ['Magnetometria', 'category/magnetometria.html'],
