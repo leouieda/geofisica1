@@ -4,8 +4,8 @@ from __future__ import unicode_literals
 import os
 
 AUTHOR = u'Leonardo Uieda'
-SITENAME = u'Geof\xedsica 1 - Bacharelado em Geologia'
-SITESUBTITLE = u'Universidade do Estado do Rio de Janeiro'
+SITENAME = u'Geof\xedsica 1'
+SITESUBTITLE = u'Geologia - Universidade do Estado do Rio de Janeiro'
 SITEURL = ''
 RELATIVE_URLS = True
 
