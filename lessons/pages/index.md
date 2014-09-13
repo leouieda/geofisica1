@@ -16,4 +16,12 @@ A lista servirá também para tirar dúvidas.
 
 ## Ementa
 
-1. [Gravimetria](/category/gravimetria.html)
+1. [Introdução à Geofísica](/lessons/misc/introducao.html)
+2. [Gravimetria](/category/gravimetria.html)
+    * [Gravitação](/lessons/gravimetria/gravitacao.html)
+    * [Anomalia da gravidade](/lessons/gravimetria/anomalia.html)
+    * [Isostasia](/lessons/gravimetria/isostasia.html)
+    * [Gravimetria](/lessons/gravimetria/gravimetria.html)
+    * [Análise qualitativa: Transformações](/lessons/gravimetria/transformacoes.html)
+    * [Análise quantitativa: Modelagem](/lessons/gravimetria/modelagem.html)
+3. [Magnetometria](/category/magnetometria.html)
