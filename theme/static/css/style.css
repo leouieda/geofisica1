@@ -85,11 +85,11 @@ header ul {
     padding-top: 10px;
     padding-bottom: 10px;
     list-style-type: none;
+
 }
 header li {
-    font-size: 10pt;
+    font-weight: bold;
     display: inline;
-    text-transform: uppercase;
     padding: 10px;
     line-height: 15px;
 }

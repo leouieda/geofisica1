@@ -13,11 +13,9 @@ TIMEZONE = u'America/Sao_Paulo'
 DEFAULT_LANG = u'pt'
 
 PATH = 'lessons'
-ARTICLE_URL = '{slug}.html'
-ARTICLE_SAVE_AS = '{slug}.html'
+ARTICLE_URL = 'lessons/{category}/{slug}.html'
+ARTICLE_SAVE_AS = 'lessons/{category}/{slug}.html'
 PAGE_PATHS = ['pages']
-PAGE_URL = '{slug}.html'
-PAGE_SAVE_AS = '{slug}.html'
 
 STATIC_PATHS = ['images', 'notebooks']
 
@@ -27,7 +25,7 @@ CATEGORY_FEED_ATOM = None
 TRANSLATION_FEED_ATOM = None
 
 DEFAULT_PAGINATION = 10
-DISPLAY_CATEGORIES_ON_MENU = True
+DISPLAY_CATEGORIES_ON_MENU = False
 DISPLAY_PAGES_ON_MENU = False
 SUMMARY_MAX_LENGTH = 100
 
@@ -43,8 +41,9 @@ FIGURE_NUMBERS = True
 THEME = 'theme'
 
 INTERNALLINKS = [
-    ['<i class="fa fa-home fa-lg" title="Página inicial"></i>', 'index.html'],
-    ['Introdução', 'introducao.html'],
+    ['Introdução', 'lessons/misc/introducao.html'],
+    ['Gravimetria', 'category/gravimetria.html'],
+    ['Magnetometria', 'category/magnetometria.html'],
     ]
 EXTERNALLINKS = []
 
