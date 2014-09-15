@@ -1,6 +1,6 @@
 title: Isostasia
 date: 13/09/2014
-slug: isostasia
+slug: 3-isostasia
 
 * O que é isostasia?
 * Modelo de Airy-Heiskanen

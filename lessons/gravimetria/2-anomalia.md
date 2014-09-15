@@ -1,6 +1,6 @@
 title: Anomalia da gravidade
 date: 13/09/2014
-slug: anomalia
+slug: 2-anomalia
 
 * Por que anomalias?
 * Princípio da superposição.

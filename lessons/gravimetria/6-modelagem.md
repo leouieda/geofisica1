@@ -1,6 +1,6 @@
-title: Modelagem
+title: Análise quantitativa: Modelagem
 date: 13/09/2014
-slug: modelagem
+slug: 6-modelagem
 
 * Isolando o que não conhecemos.
 * Testando uma hipótese geológica.
