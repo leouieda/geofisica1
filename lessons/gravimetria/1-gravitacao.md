@@ -2,13 +2,13 @@ title: Gravitação
 date: 13/09/2014
 slug: 1-gravitacao
 
+Tópicos abordados:
+
 * Lei de Newton.
 * Como varia a gravidade da Terra.
 * Rotação e aceleração centrípeta.
 * Forma da Terra.
 * Gravimetria, geodésia e altitude.
-
-----
 
 **Notação:** Negrito = vetor. Ex: $\bf{F}$ é uma força (um vetor) e
 $m$ é uma massa (um escalar).
@@ -23,6 +23,8 @@ $$
 
 (Por simplicidade vou usar $F$, que é a intensidade da força, e não $\bf{F}$
 que é um vetor).
+
+$G$ é a constante gravitacional (um número).
 
 Pela segunda lei de Newton, uma força é igual a uma massa vezes sua aceleração,
 $F = m a$.
@@ -50,11 +52,10 @@ São necessárias 3 coisas para descrever um vetor no espaço 3D:
 2. Direção = ângulos que esse vetor forma com Norte e vertical (por exemplo)
 3. Sentido = se a intensidade é positiva ou negativa
 
-Na geofísica é comum utilizar os ângulos **inclinação** e **declinação**.
+Na geofísica é comum utilizar os ângulos:
 
-A inclinação é o ângulo entre o vetor e o eixo vertical (z).
-
-A declinação é o ângulo entre o Norte a projeção horizontal do vetor.
+* **Inclinação**: ângulo entre o vetor e o eixo vertical (z)
+* **Declinação**: ângulo entre o Norte e a projeção horizontal do vetor
 
 Da mesma forma, eu poderia definir o vetor utilizando suas projeções nos eixos
 x, y e z.
