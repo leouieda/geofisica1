@@ -2,8 +2,27 @@
 
 {% block content %}
 
-    {% for page in pages if page.title == "index" %}
+{% for page in pages if page.title == "index" %}
     {{ page.content }}
+{% endfor %}
+
+<h2>Ementa</h2>
+<ol>
+{% for category, articles in categories %}
+    <li>
+    <a href="{{ SITEURL }}/{{ category.url }}" rel="bookmark"
+     title="Permalink to {{ category }}">{{ category|capitalize }}</a>
+    <ul>
+    {% for article in articles %}
+        <li>
+        <a href="{{ SITEURL }}/{{ article.url }}" rel="bookmark"
+         title="Permalink to {{ article.title|striptags }}">
+         {{ article.title }}</a>
+        </li>
     {% endfor %}
+    </ul>
+    </li>
+{% endfor %}
+</ol>
 
 {% endblock %}

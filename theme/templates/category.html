@@ -1,4 +1,7 @@
 {% extends "base.html" %}
+
+{% block title %}{{ SITENAME }} - {{ category|capitalize }}{% endblock title %}
+
 {% block content %}
 <h2>Lições de {{ category }}</h2>
 
