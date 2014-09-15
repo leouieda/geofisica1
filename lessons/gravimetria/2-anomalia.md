@@ -4,6 +4,6 @@ slug: 2-anomalia
 
 * Por que anomalias?
 * Princípio da superposição.
-* Modelo de referência.
+* A Terra Normal como um modelo de referência.
 * Anomalia da gravidade para a geofísica.
 * Anomalia da gravidade clássica para a geodésia.
