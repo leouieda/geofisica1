@@ -43,6 +43,7 @@ THEME = 'theme'
 INTERNALLINKS = [
     ['Sobre', 'index.html'],
     ['Gravimetria', 'category/gravimetria.html'],
+    ['Gravimetria-Práticas', 'category/gravimetria-praticas.html'],
     ['Magnetometria', 'category/magnetometria.html'],
     ]
 EXTERNALLINKS = []
