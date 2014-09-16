@@ -17,7 +17,7 @@ ARTICLE_URL = 'lessons/{category}/{slug}.html'
 ARTICLE_SAVE_AS = 'lessons/{category}/{slug}.html'
 PAGE_PATHS = ['pages']
 
-STATIC_PATHS = ['images', 'notebooks']
+STATIC_PATHS = ['images']
 
 # Feed generation is usually not desired when developing
 FEED_ALL_ATOM = None
