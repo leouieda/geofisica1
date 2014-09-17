@@ -7,10 +7,10 @@ category: Gravimetria-práticas
 
 * Aprender a gerar um mapa de algum dado geofísico
 * Entender a influência da interpolação no mapa gerado
-* Gerar mapas com diferentes projeções
 * Visualizar os dados de topografia e gravidade mundial e da América do Sul
 * Discutir a relação entre os mapas gerados e o conteúdo da aula de
   [gravitação](http://www.leouieda.com/geofisica1/lessons/gravimetria/1-gravitacao.html)
+* **Extra**: Gerar mapas com diferentes projeções
 
 ### Instruções
 
