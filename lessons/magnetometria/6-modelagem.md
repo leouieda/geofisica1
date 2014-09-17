@@ -1,5 +1,5 @@
 title: Análise quantitativa: Modelagem
-date: 17/09/2014
+date: 15/09/2014
 slug: 6-modelagem-mag
 
 * Revisão: anomalias; testando uma hipótese geológica;
