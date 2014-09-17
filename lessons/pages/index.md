@@ -30,15 +30,33 @@ A lista servirá também para tirar dúvidas.
 Deverão ser entregues **dois relatórios**:
 um sobre as práticas de gravimetria e
 outro sobre as de magnetometria.
-Os relatórios deverão explicar em detalhe:
-a teoria, as etapas realizadas nas atividades práticas, os resultados obtidos,
-uma discussão e conclusões sobre os resultados.
 Os relatórios serão **individuais**.
+
+Os relatórios deverão explicar em detalhe:
+
+* A teoria discutida nas aulas teóricas e práticas.
+* As etapas realizadas nas atividades práticas, com descrição dos parâmetros
+  e métodos utilizados. Não é necessário detalhar as instruções específicas
+  de como utilizar os programas. Foquem nos conceitos.
+* Os resultados obtidos e mapas gerados.
+* Discussão dos resultados e suas implicações, conforme discutido nas aulas
+  práticas. Fale sobre as principais lições aprendidas e como esses conceitos
+  se relacionam com a teoria.
+
+Esses requisitos seguem a estrutura básica de qualquer trabalho científico:
+Introdução, Métodos, Resultados, Discussão e conclusões.
+Será cobrado o uso devido de referências bibliográficas.
+
+**Dica**: usem a maior invenção do último século, a Internet. Existem diversos
+*sites* sobre geofísica, de [apostilas da Universidade da California](http://appliedgeophysics.lbl.gov/)
+a [vídeo aulas da USP](http://www.eaulas.usp.br/portal/course.action?course=209).
+
+A nota final será:
 
 $$
 Nota = \frac{\text{Relatorio Grav.} + \text{Relatorio Mag.}}{2}
 $$
 
-Os alunos que não alcançarem a nota mínima com a média das notas dos relatórios
+Os alunos que não alcançarem a nota mínima
 terão direito a fazer uma **prova final**.
 A prova será feita com base em todo o conteúdo da disciplina.
