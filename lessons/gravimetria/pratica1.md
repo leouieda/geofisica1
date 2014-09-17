@@ -24,9 +24,16 @@ category: Gravimetria-práticas
 
 Os dados devem estar presentes nos computadores do laboratório.
 Estes dados podem ser baixados do
-[repositório da disciplina no Github](https://github.com/leouieda/geofisica1/tree/master/data).
-Dados de topografia e gravidade foram gerados a partir de modelos de harmônicos
-esféricos utilizando o [serviço online da ICGEM](http://icgem.gfz-potsdam.de/ICGEM/potato/Service.html).
+da pasta `data` do
+[repositório da disciplina no Github](https://github.com/leouieda/geofisica1).
+Dados de topografia e gravidade foram gerados a partir de
+[modelos de harmônicos esféricos](http://en.wikipedia.org/wiki/Spherical_harmonics)
+utilizando o [serviço online da ICGEM](http://icgem.gfz-potsdam.de/ICGEM/potato/Service.html).
 
-
+Os dados em `random-grid.txt`, `flight-grid.txt` e `regular-grid.txt` foram
+gerados com o arquivo
+[notebooks/pratica1.ipynb](http://nbviewer.ipython.org/github/leouieda/geofisica1/blob/master/notebooks/pratica1.ipynb)
+no
+[repositório da disciplina no Github](https://github.com/leouieda/geofisica1).
+Esse arquivo é um [IPython notebook](http://ipython.org/notebook.html).
 
