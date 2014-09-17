@@ -65,11 +65,10 @@ gerados com o arquivo
 5. Faça um mapa da gravidade mundial `eigen-6c3sat-0_5-mundo.gdf`.
     * Qual é a feição mais marcante deste mapa?
     * O que causa essa feição?
+    * Como a escala de cor influencia na percepção do mapa?
     * Como é a gravidade sobre as grandes montanhas (Himalaias e Andes)?
     * Por que ela é assim?
     * Como poderíamos realçar, ou focar, nas partes da gravidade que são
       causadas por feições geológicas desconhecidas? Em outras palavras, como
       isolar as partes da gravidade que são anômalas?
 6. **Extra**: Faça um mapa da topografia mundial `etopo1-0_5-mundo.gdf`.
-    * Como a escala de cor influencia na percepção do mapa?
-
