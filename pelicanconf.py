@@ -46,7 +46,9 @@ INTERNALLINKS = [
     ['Gravimetria-Práticas', 'category/gravimetria-praticas.html'],
     ['Magnetometria', 'category/magnetometria.html'],
     ]
-EXTERNALLINKS = []
+EXTERNALLINKS = [
+    ['<i class="fa fa-github fa-lg"></i>', 'https://github.com/leouieda/geofisica1'],
+    ]
 
 
 # This goes at the footer of the site
