@@ -88,8 +88,7 @@ header ul {
 
 }
 header li {
-    font-weight: bold;
-    display: inline;
+    display: inline-block;
     padding: 10px;
     line-height: 15px;
 }
