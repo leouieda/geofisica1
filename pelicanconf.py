@@ -38,7 +38,6 @@ PLUGINS = ['summary',
 RESPONSIVE_IMAGES = False
 FIGURE_NUMBERS = True
 MATH = {'color': '#424242'}
-MD_EXTENSIONS = []
 
 THEME = 'theme'
 
