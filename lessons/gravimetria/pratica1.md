@@ -33,6 +33,7 @@ Os dados devem estar presentes nos computadores do laboratório.
 Estes dados podem ser baixados do
 da pasta `data` do
 [repositório da disciplina no Github](https://github.com/leouieda/geofisica1).
+
 Dados de topografia e gravidade foram gerados a partir de
 [modelos de harmônicos esféricos](http://en.wikipedia.org/wiki/Spherical_harmonics)
 utilizando o [serviço online da ICGEM](http://icgem.gfz-potsdam.de/ICGEM/potato/Service.html).
@@ -72,3 +73,14 @@ gerados com o arquivo
       causadas por feições geológicas desconhecidas? Em outras palavras, como
       isolar as partes da gravidade que são anômalas?
 6. **Extra**: Faça um mapa da topografia mundial `etopo1-0_5-mundo.gdf`.
+
+### Mapas
+
+O arquivo
+[notebooks/pratica1.ipynb](http://nbviewer.ipython.org/github/leouieda/geofisica1/blob/master/notebooks/pratica1.ipynb)
+no [repositório da disciplina no Github](https://github.com/leouieda/geofisica1)
+contem os mapas das tarefas acima gerados por mim.
+Utilizem esses mapas como uma referência, ou objetivo,
+quando forem fazer o relatório.
+**Não usem esses mapas no relatório**.
+Usem os mapas que vocês mesmos fizeram.
