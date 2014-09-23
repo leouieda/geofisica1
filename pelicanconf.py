@@ -29,7 +29,7 @@ DISPLAY_CATEGORIES_ON_MENU = False
 DISPLAY_PAGES_ON_MENU = False
 SUMMARY_MAX_LENGTH = 0
 
-PLUGIN_PATHS = [os.path.abspath('../pelican-plugins')]
+PLUGIN_PATHS = ['pelican-plugins']
 PLUGINS = ['summary',
            'better_figures_and_images',
            'html_rst_directive',
