@@ -33,10 +33,11 @@ PLUGIN_PATHS = [os.path.abspath('../pelican-plugins')]
 PLUGINS = ['summary',
            'better_figures_and_images',
            'html_rst_directive',
-           'latex',
+           'render_math',
            ]
 RESPONSIVE_IMAGES = False
 FIGURE_NUMBERS = True
+MATH = {'color': '#424242'}
 
 THEME = 'theme'
 
