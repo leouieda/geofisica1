@@ -1,28 +1,23 @@
-title: Prática 2 - A gravidade da Terra Normal, anomalias ar-livre e Bouguer
+title: Prática 2 - A gravidade da Terra Normal e a anomalia ar-livre
 date: 16/09/2014
 slug: pratica2
 category: Gravimetria-práticas
 
 ### Objetivos:
 
-* Aprender a calcular a gravidade da Terra Normal e as anomalias ar-livre e
-  Bouguer
-* Gerar mapas de anomalia ar-livre e Bouguer para o mundo todo
-* Observar as principais feições destas anomalias
-* Entender como as anomalias ar-livre e Bouguer auxiliaram nosso entendimento
-  da crosta e litosfera
+* Visualizar os efeitos que a escala de cor tem na interpretação dos mapas
+* Aprender a calcular a gravidade da Terra Normal e a anomalias ar-livre
+* Gerar um mapa de anomalia ar-livre para o mundo todo
+* Observar e entender as causas das principais feições desta anomalia
 
 ### Dados
 
-Para esta prática usaremos os arquivos:
+Para esta prática usaremos o arquivo:
 
 * `eigen-6c3sat-0_5-mundo.gdf`: Gravidade mundial. Arquivo ASCII com 4 colunas
   (lon, lat, altitude, gravidade). Malha regular com espaçamento de 0.5 grau.
   Gravidade em [mGal](http://en.wikipedia.org/wiki/Gal_%28unit%29).
   Gravidade medida na superfície da Terra.
-* `etopo1-0_5-mundo.gdf`: Topografia mundial. Mesmo formato que a gravidade mas
-  com 3 colunas (lon, lat, altitude). Nos oceanos a altitude é negativa e
-  reflete a batimetria. Em metros.
 
 Os dados devem estar presentes nos computadores do laboratório.
 Estes dados podem ser baixados do
@@ -45,7 +40,6 @@ utilizando o [serviço online da ICGEM](http://icgem.gfz-potsdam.de/ICGEM/potato
 3. Calcule a diferença $\Delta g = g - \gamma$
    entre a gravidade medida ($g$) e $\gamma$.
    Faça um mapa com a diferença utilizando uma escala de cor divergente.
-    * O resultado é o que você esperava?
     * Qual é a explicação para os valores negativos nas grandes cadeias de
       montanhas?
 4. Calcule a anomalia ar-livre e faça um mapa com uma escala de cor divergente.
@@ -57,18 +51,6 @@ utilizando o [serviço online da ICGEM](http://icgem.gfz-potsdam.de/ICGEM/potato
     * Por que é negativa/positiva/negativa se traçarmos um perfil cortando os
       Andes ou Himalaias?
     * Por que apresenta um par positivo/negativo nas trincheiras?
-5. Calcule e faça um mapa da anomalia Bouguer
-   utilizando a correção do platô de Bouguer com densidade
-   $\rho = 2670\ kg/m^3$.
-    * O que acontece com a correção Bouguer nos oceanos, onde a altitude da
-      medição é zero (nível do mar)?
-      O que foi removido com a Terra Normal nos oceanos?
-6. Calcule e faça um mapa da anomalia Bouguer correta para os continentes e
-   oceanos.
-    * Por que é, de maneira geral, negativa nos continentes e positiva nos
-      oceanos?
-    * Por que é fortemente negativa nos regiões de grandes montanhas?
-    * Por que a anomalia apresenta um baixo nas dorsais meso-oceânicas?
 
 ### Fórmulas e valores
 
@@ -103,15 +85,6 @@ $$
 
 em que $H$ é a altitude do ponto de observação.
 
-A anomalia Bouguer é
-
-$$
-\Delta g_{BG} = \Delta g_{AL} - 2\pi G \rho H
-$$
-
-em que $\rho$ é a densidade do platô de Bouguer e
-$G = 0.00000000006673\ m^3 kg^{-1} s^{-1}$ é a constante gravitacional.
-
 ### Dicas
 
 * Entre no [site do Peter Kovesi](http://peterkovesi.com/projects/colourmaps/)
@@ -120,6 +93,9 @@ $G = 0.00000000006673\ m^3 kg^{-1} s^{-1}$ é a constante gravitacional.
   Se não estiverem, baixem o arquivo `Geosoft.zip` e peçam ajuda.
 * Carregue seus dados no Excel e utilize fórmulas para calcular os
   valores das anomalias.
+* Cuidado com `.` e `,` para representar decimais. O Geosoft utiliza `.` mas o
+  Excel em português utiliza `,`. Utilize a função "Localizar e substituir"
+  do Bloco de Notas.
 * Faça todas as contas em unidades do SI (kg, m, s) e depois converta para
   mGal. Para converter de $m/s^2$ para mGal, multiplique por 100000.
 * Cuidado com `sin` e `cos`! Geralmente essas funções querem ângulos em
