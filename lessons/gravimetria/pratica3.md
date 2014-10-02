@@ -36,19 +36,21 @@ utilizando o [serviço online da ICGEM](http://icgem.gfz-potsdam.de/ICGEM/potato
    [prática 2](http://www.leouieda.com/geofisica1/lessons/gravimetria-praticas/pratica2.html)
    e faça um mapa utilizando uma escala de cor divergente.
     * Revisar as principais feições da anomalia ar-livre.
-2. Calcule e faça um mapa da anomalia Bouguer
-   utilizando a correção do platô de Bouguer com densidade
-   $\rho = 2670\ kg/m^3$.
-    * O que acontece com a correção Bouguer nos oceanos, onde a altitude da
-      medição é zero (nível do mar)?
-      O que foi removido com a Terra Normal nos oceanos?
-3. Carregue e faça um mapa da topografia no arquivo `etopo1-0_5-mundo.gdf`.
-4. Calcule e faça um mapa da anomalia Bouguer correta para os continentes e
+    * Em que altitude foram medidos os dados de gravidade?
+    * Como remover o efeito da topografia para poder investigar as estruturas
+      internas da crosta?
+    * Como deve ser essa correção nos oceanos?
+2. Carregue e faça um mapa da topografia mundial no arquivo
+   `etopo1-0_5-mundo.gdf`.
+3. Calcule e faça um mapa da anomalia Bouguer correta para os continentes
+   (com densidade do platô de Bouguer $\rho = 2670\ kg/m^3$) e
    oceanos.
     * Por que é, de maneira geral, negativa nos continentes e positiva nos
       oceanos?
     * Por que é fortemente negativa nos regiões de grandes montanhas?
-    * Por que a anomalia apresenta um baixo nas dorsais meso-oceânicas?
+    * Por que as montanhas Rochosas não apresentam anomalia ar-livre
+      significativa mas apresentam anomalia Bouguer fortemente negativa?
+    * Por que a anomalia Bouguer apresenta um baixo nas dorsais meso-oceânicas?
 
 ### Fórmulas e valores
 
