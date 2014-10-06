@@ -15,26 +15,29 @@ category: Gravimetria-práticas
 
 ### Dados
 
-Para esta prática usaremos os arquivos:
+Para esta prática usaremos os arquivos (clique para baixar):
 
-* `random-grid.txt`: Dados "fabricados". Arquivo
+
+* [random-grid.txt](https://raw.githubusercontent.com/leouieda/geofisica1/master/data/random-grid.txt):
+  Dados "fabricados". Arquivo
   [ASCII](http://en.wikipedia.org/wiki/ASCII) com 4 colunas (x, y, z, dado).
   Dados distribuídos aleatoriamente.
-* `regular-grid.txt`: Versão completa dos dados fabricados. Disposto em uma
+* [regular-grid.txt](https://raw.githubusercontent.com/leouieda/geofisica1/master/data/regular-grid.txt):
+  Versão completa dos dados fabricados. Disposto em uma
   malha regular.
-* `eigen-6c3sat-0_5-mundo.gdf`: Gravidade mundial. Arquivo ASCII com 4 colunas
+* [eigen-6c3stat-0_5-mundo.gdf](https://raw.githubusercontent.com/leouieda/geofisica1/master/data/eigen-6c3stat-0_5-mundo.gdf):
+  Gravidade mundial. Arquivo ASCII com 4 colunas
   (lon, lat, altitude, gravidade). Malha regular com espaçamento de 0.5 grau.
   Gravidade em [mGal](http://en.wikipedia.org/wiki/Gal_%28unit%29).
   Gravidade medida na superfície da Terra.
-* `etopo1-0_5-mundo.gdf`: Topografia mundial. Mesmo formato que a gravidade mas
-  com 3 colunas (lon, lat, altitude).
 
 Os dados devem estar presentes nos computadores do laboratório.
-Estes dados podem ser baixados do
+Estes dados também podem ser baixados
 da pasta `data` do
 [repositório da disciplina no Github](https://github.com/leouieda/geofisica1).
+Após clicar no nome do arquivo, selecione "Raw" para baixar os dados.
 
-Dados de topografia e gravidade foram gerados a partir de
+Dados de gravidade foram gerados a partir de
 [modelos de harmônicos esféricos](http://en.wikipedia.org/wiki/Spherical_harmonics)
 utilizando o [serviço online da ICGEM](http://icgem.gfz-potsdam.de/ICGEM/potato/Service.html).
 Os dados em `random-grid.txt`, `flight-grid.txt` e `regular-grid.txt` foram

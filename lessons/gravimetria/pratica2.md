@@ -14,7 +14,8 @@ category: Gravimetria-práticas
 
 Para esta prática usaremos o arquivo:
 
-* `eigen-6c3sat-0_5-mundo.gdf`: Gravidade mundial. Arquivo ASCII com 4 colunas
+* [eigen-6c3stat-0_5-mundo.gdf](https://raw.githubusercontent.com/leouieda/geofisica1/master/data/eigen-6c3stat-0_5-mundo.gdf):
+  Gravidade mundial. Arquivo ASCII com 4 colunas
   (lon, lat, altitude, gravidade). Malha regular com espaçamento de 0.5 grau.
   Gravidade em [mGal](http://en.wikipedia.org/wiki/Gal_%28unit%29).
   Gravidade medida na superfície da Terra.
@@ -23,8 +24,9 @@ Os dados devem estar presentes nos computadores do laboratório.
 Estes dados podem ser baixados do
 da pasta `data` do
 [repositório da disciplina no Github](https://github.com/leouieda/geofisica1).
+Após clicar no nome do arquivo, selecione "Raw" para baixar os dados.
 
-Dados de topografia e gravidade foram gerados a partir de
+Dados de gravidade foram gerados a partir de
 [modelos de harmônicos esféricos](http://en.wikipedia.org/wiki/Spherical_harmonics)
 utilizando o [serviço online da ICGEM](http://icgem.gfz-potsdam.de/ICGEM/potato/Service.html).
 
@@ -37,12 +39,8 @@ utilizando o [serviço online da ICGEM](http://icgem.gfz-potsdam.de/ICGEM/potato
    (lat, lon) em que foram medidos os dados de gravidade.
    Utilize o elipsoide WGS84.
    Faça um mapa com esses valores utilizando a mesma escala de cor que antes.
-3. Calcule a diferença $\Delta g = g - \gamma$
-   entre a gravidade medida ($g$) e $\gamma$.
-   Faça um mapa com a diferença utilizando uma escala de cor divergente.
-    * Qual é a explicação para os valores negativos nas grandes cadeias de
-      montanhas?
-4. Calcule a anomalia ar-livre e faça um mapa com uma escala de cor divergente.
+    * A gravidade da Terra Normal é como você esperava?
+3. Calcule a anomalia ar-livre e faça um mapa com uma escala de cor divergente.
     * Por que a anomalia ar-livre não é mais parecida com a topografia? Nós
       removemos o efeito da Terra Normal e da distância então só deveria restar
       o efeito da massa topográfica.
@@ -58,6 +56,7 @@ Todas as fórmulas e valores foram retirados do livro de
 Hofmann-Wellenhof e Moritz (2006).
 
 A gravidade de um elipsoide calculada na sua superfície é
+data pela equação de Somigliana de 1976,
 
 $$
 \gamma(\varphi) =
@@ -77,30 +76,42 @@ Vamos utilizar o elipsoide de referência
 * $\gamma_a$ = 9.7803253359 $m/s^2$
 * $\gamma_b$ = 9.8321849378 $m/s^2$
 
-A anomalia ar-livre é
+Para calcular o valor de $\gamma$ no mesmo em que medimos a gravidade (vamos
+chamar de ponto P)
+
+$$
+\gamma_P = \gamma - 0.3086H
+$$
+
+em que $H$ é a altitude geométrica do ponto de observação.
+
+A anomalia ar-livre é a diferença entre a gravidade medida em P e a gravidade
+do elipsoide calculada também em P
 
 $$
 \Delta g_{AL} = g - \gamma_P = g - (\gamma - 0.3086H) = g - \gamma + 0.3086H
 $$
 
-em que $H$ é a altitude do ponto de observação.
 
 ### Dicas
 
 * Entre no [site do Peter Kovesi](http://peterkovesi.com/projects/colourmaps/)
   e escolha as escalas de cor. Os arquivos disponibilizados no site devem estar
   nos computadores do LAGEX e acessíveis pelo Oasis Montaj.
-  Se não estiverem, baixem o arquivo `Geosoft.zip` e peçam ajuda.
+  Se não estiverem, baixem o arquivo `Geosoft.zip` do site.
+  Lá estarão os arquivos com as escalas de cor.
 * Carregue seus dados no Excel e utilize fórmulas para calcular os
   valores das anomalias.
 * Cuidado com `.` e `,` para representar decimais. O Geosoft utiliza `.` mas o
   Excel em português utiliza `,`. Utilize a função "Localizar e substituir"
-  do Bloco de Notas.
+  do Bloco de Notas (**não use o WordPad pois é muito lento**).
 * Faça todas as contas em unidades do SI (kg, m, s) e depois converta para
   mGal. Para converter de $m/s^2$ para mGal, multiplique por 100000.
 * Cuidado com `sin` e `cos`! Geralmente essas funções querem ângulos em
   radianos. Converta latitude de graus para radianos multiplicando por
   $\pi/180$.
+* Fórmulas no Excel devem começar com `=`.
+* Para calcular $\pi$ no Excel, use `PI()`.
 
 ### Mapas
 
