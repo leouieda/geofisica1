@@ -83,6 +83,13 @@ e $t$ é a altitude da topografia.
 No caso dos oceanos ($t < 0$), devemos usar $-t$ na fórmula pois a topografia
 no oceano é negativa (abaixo do elipsoide).
 
+A fórmula Excel para calcular a gravidade da Terra Normal ($\gamma$) é:
+
+      =100000*(6378137*9,7803253359*COS($E1)^2 + 6356752,3142*9,8321849378*SEN($E1)^2)/RAIZ(6378137^2*COS($E1)^2 + 6356752,3142^2*SEN($E1)^2)
+
+Não se esqueçam de trocar `E1` pela coluna que corresponde a latitude em
+radianos da sua planilha.
+
 ### Dicas
 
 * Entre no [site do Peter Kovesi](http://peterkovesi.com/projects/colourmaps/)
@@ -97,6 +104,7 @@ no oceano é negativa (abaixo do elipsoide).
   mGal. Para converter de $m/s^2$ para mGal, multiplique por 100000.
 * Fórmulas no Excel devem começar com `=`.
 * Para calcular $\pi$ no Excel, use `PI()`.
+
 
 ### Mapas
 
