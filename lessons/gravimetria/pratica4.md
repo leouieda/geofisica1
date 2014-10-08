@@ -34,8 +34,9 @@ Para esta prática usaremos os arquivos:
   Topografia e batimetria da região Andina.
 
 Todos os arquivos são em formato ASCII.
-Arquivos da gravidade (`eigen-6c3stat-*.gdf`) possuem 4 colunas:
-longitude, latitude, altitude e gravidade.
+Arquivos da gravidade (`eigen-6c3stat-*.gdf`) possuem 3 colunas:
+longitude, latitude e gravidade.
+A altitude das medições é constante e está inclusa no cabeçalho do arquivo.
 Dados de gravidade foram calculados em uma malha regular
 a uma altitude constante em relação ao elipsoide.
 Arquivos da topografia (`etopo1-*.gdf`) possuem 3 colunas:
@@ -44,6 +45,14 @@ Dados de topografia foram calculados nos mesmos pontos que os dados de
 gravidade.
 Gravidade em [mGal](http://en.wikipedia.org/wiki/Gal_%28unit%29) e altitudes em
 metros.
+
+Para facilitar, juntei os dados de gravidade e topografia em arquivos `.csv`,
+cada um com 5 colunas (nomes das colunas estão na primeira linha do arquivo):
+
+* [havai.csv](https://raw.githubusercontent.com/leouieda/geofisica1/master/data/havai.csv)
+* [hudson.csv](https://raw.githubusercontent.com/leouieda/geofisica1/master/data/hudson.csv)
+* [japao.csv](https://raw.githubusercontent.com/leouieda/geofisica1/master/data/japao.csv)
+* [andes.csv](https://raw.githubusercontent.com/leouieda/geofisica1/master/data/andes.csv)
 
 Os dados devem estar presentes nos computadores do laboratório.
 Estes dados podem ser baixados do
