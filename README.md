@@ -17,14 +17,14 @@ O site é gerado pelo sistema [Pelican](http://docs.getpelican.com/).
 Requisitos para compilação:
 
 * Pelican (3.4.0)
-* markdown
+* markdown (2.4)
 * pillow
 * beautifulsoup4
 * nodejs
 
 Para instalar as componentes em Python (todos menos nodejs):
 
-    pip install pelican markdown pillow beautifulsoup4
+    pip install pelican==3.4.0 markdown==2.4 pillow beautifulsoup4
 
 Para instalar nodejs no Ubuntu:
 
