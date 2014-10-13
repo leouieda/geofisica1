@@ -30,16 +30,6 @@ Para instalar nodejs no Ubuntu:
 
     sudo apt-get install nodejs
 
-Você também precisará do repositório de plugins do Pelican:
-[pelican-plugins](https://github.com/getpelican/pelican-plugins).
-Este repositório deverá estar no mesmo diretório que o repositório
-`geofisica1`.
-Para clonar os dois repositórios:
-
-    git clone https://github.com/leouieda/geofisica1.git
-    git clone --recursive https://github.com/getpelican/pelican-plugins.git
-
-
 Entre no repositório e use o `Makefile` para compilar o HTML do site:
 
     cd geofisica1
