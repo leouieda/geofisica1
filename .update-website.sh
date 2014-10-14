@@ -8,7 +8,7 @@ if [ "$TRAVIS_PULL_REQUEST" == "false" ] && [ "$TRAVIS_BRANCH" == "master" ]; th
     cp -R output $HOME/keep
     # Go to home and setup git
     cd $HOME
-    git config --global user.email "leouieda@gmail.co "
+    git config --global user.email "leouieda@gmail.com"
     git config --global user.name "Leonardo Uieda"
     git config --global github.user "leouieda"
     echo -e "Cloning project"
