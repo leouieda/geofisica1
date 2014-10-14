@@ -20,7 +20,7 @@ if [ "$TRAVIS_PULL_REQUEST" == "false" ] && [ "$TRAVIS_BRANCH" == "master" ]; th
     git checkout --orphan gh-pages
     # Delete all the files and replace with our good set
     git rm -rf .
-    cp -Rf $HOME/keep/* .
+    cp -Rf $HOME/keep/. $HOME/gh-pages
     # add, commit and push files
     git add -f .
     git commit -m "Travis build $TRAVIS_BUILD_NUMBER pushed to geofisica1/gh-pages"
