@@ -17,28 +17,18 @@ O site é gerado pelo sistema [Pelican](http://docs.getpelican.com/).
 Requisitos para compilação:
 
 * Pelican (3.4.0)
-* markdown
+* markdown (2.4)
 * pillow
 * beautifulsoup4
 * nodejs
 
 Para instalar as componentes em Python (todos menos nodejs):
 
-    pip install pelican markdown pillow beautifulsoup4
+    pip install pelican==3.4.0 markdown==2.4 pillow beautifulsoup4
 
 Para instalar nodejs no Ubuntu:
 
     sudo apt-get install nodejs
-
-Você também precisará do repositório de plugins do Pelican:
-[pelican-plugins](https://github.com/getpelican/pelican-plugins).
-Este repositório deverá estar no mesmo diretório que o repositório
-`geofisica1`.
-Para clonar os dois repositórios:
-
-    git clone https://github.com/leouieda/geofisica1.git
-    git clone --recursive https://github.com/getpelican/pelican-plugins.git
-
 
 Entre no repositório e use o `Makefile` para compilar o HTML do site:
 
