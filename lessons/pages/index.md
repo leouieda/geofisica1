@@ -47,6 +47,8 @@ Esses requisitos seguem a estrutura básica de qualquer trabalho científico:
 Introdução, Métodos, Resultados, Discussão e conclusões.
 Será cobrado o uso devido de referências bibliográficas.
 
+Tarefas das práticas marcadas como "Extra" não precisam estar nos relatórios.
+
 **Dica**: usem a maior invenção do último século, a Internet. Existem diversos
 *sites* sobre geofísica, de [apostilas da Universidade da California](http://appliedgeophysics.lbl.gov/)
 a [vídeo aulas da USP](http://www.eaulas.usp.br/portal/course.action?course=209).
