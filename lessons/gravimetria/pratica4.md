@@ -20,10 +20,6 @@ Para esta prática usaremos os arquivos:
   Gravidade sobre as [ilhas do Havaí](https://www.google.com.br/maps/@20.5932929,-157.7151201,1358555m/data=!3m1!1e3?hl=en).
 * [etopo1-havai.gdf](https://raw.githubusercontent.com/leouieda/geofisica1/master/data/etopo1-havai.gdf):
   Topografia e batimetria do Havaí.
-* [eigen-6c3stat-hudson.gdf](https://raw.githubusercontent.com/leouieda/geofisica1/master/data/eigen-6c3stat-hudson.gdf):
-  Gravidade sobre as [baía de Hudson](https://www.google.com.br/maps/@59.8228665,-78.9606344,2918112m/data=!3m1!1e3?hl=en).
-* [etopo1-hudson.gdf](https://raw.githubusercontent.com/leouieda/geofisica1/master/data/etopo1-hudson.gdf):
-  Topografia e batimetria da baía de Hudson.
 * [eigen-6c3stat-japao.gdf](https://raw.githubusercontent.com/leouieda/geofisica1/master/data/eigen-6c3stat-japao.gdf):
   Gravidade sobre o [Japão](https://www.google.com.br/maps/@36.1346696,134.3822639,2344222m/data=!3m1!1e3?hl=en).
 * [etopo1-japao.gdf](https://raw.githubusercontent.com/leouieda/geofisica1/master/data/etopo1-japao.gdf):
@@ -32,27 +28,28 @@ Para esta prática usaremos os arquivos:
   Gravidade sobre o [altiplano dos Andes](https://www.google.com.br/maps/@-24.8423665,-69.6206081,2633999m/data=!3m1!1e3?hl=en).
 * [etopo1-andes.gdf](https://raw.githubusercontent.com/leouieda/geofisica1/master/data/etopo1-andes.gdf):
   Topografia e batimetria da região Andina.
+* [eigen-6c3stat-hudson.gdf](https://raw.githubusercontent.com/leouieda/geofisica1/master/data/eigen-6c3stat-hudson.gdf):
+  Gravidade sobre as [baía de Hudson](https://www.google.com.br/maps/@59.8228665,-78.9606344,2918112m/data=!3m1!1e3?hl=en).
+* [etopo1-hudson.gdf](https://raw.githubusercontent.com/leouieda/geofisica1/master/data/etopo1-hudson.gdf):
+  Topografia e batimetria da baía de Hudson.
 
 Todos os arquivos são em formato ASCII.
-Arquivos da gravidade (`eigen-6c3stat-*.gdf`) possuem 3 colunas:
-longitude, latitude e gravidade.
-A altitude das medições é constante e está inclusa no cabeçalho do arquivo.
+Arquivos da gravidade (`eigen-6c3stat-*.gdf`) possuem 4 colunas:
+longitude, latitude, altitude da medição (metros) e gravidade (mGal).
 Dados de gravidade foram calculados em uma malha regular
-a uma altitude constante em relação ao elipsoide.
+sobre a superfície da Terra.
 Arquivos da topografia (`etopo1-*.gdf`) possuem 3 colunas:
-longitude, latitude e altitude (da topografia/batimetria).
+longitude, latitude e altitude (da topografia/batimetria em metros).
 Dados de topografia foram calculados nos mesmos pontos que os dados de
 gravidade.
-Gravidade em [mGal](http://en.wikipedia.org/wiki/Gal_%28unit%29) e altitudes em
-metros.
 
 Para facilitar, juntei os dados de gravidade e topografia em arquivos `.csv`,
 cada um com 5 colunas (nomes das colunas estão na primeira linha do arquivo):
 
 * [havai.csv](https://raw.githubusercontent.com/leouieda/geofisica1/master/data/havai.csv)
-* [hudson.csv](https://raw.githubusercontent.com/leouieda/geofisica1/master/data/hudson.csv)
 * [japao.csv](https://raw.githubusercontent.com/leouieda/geofisica1/master/data/japao.csv)
 * [andes.csv](https://raw.githubusercontent.com/leouieda/geofisica1/master/data/andes.csv)
+* [hudson.csv](https://raw.githubusercontent.com/leouieda/geofisica1/master/data/hudson.csv)
 
 Os dados devem estar presentes nos computadores do laboratório.
 Estes dados podem ser baixados do
@@ -72,15 +69,38 @@ utilizando o [serviço online da ICGEM](http://icgem.gfz-potsdam.de/ICGEM/potato
 2. Fazer gráficos da topografia, anomalia ar-livre e Bouguer para um perfil
    entre os pontos (lon, lat):
    $(197.5^\circ, 15^\circ)$ e $(207^\circ, 28^\circ)$.
-3. Repetir a tarefa 1 para os dados da Baía Hudson.
-4. Repetir a tarefa 2 para um perfil entre os pontos:
-   $(260^\circ, 45^\circ)$ e $(300^\circ, 70^\circ)$.
-5. Repetir a tarefa 1 para os dados do Japão.
-6. Repetir a tarefa 2 para um perfil entre os pontos:
-   $(130^\circ, 43^\circ)$ e $(148^\circ, 34^\circ)$.
-7. Repetir a tarefa 1 para os dados dos Andes.
-8. Repetir a tarefa 2 para um perfil entre os pontos:
+    * Por que a anomalia ar-livre é positiva nas ilhas?
+    * Por que a anomalia ar-livre tem seu mínimo logo ao lado das ilhas?
+    * Olhando para o perfil de topografia, por que após o baixo ao lado da
+      ilha há um alto na topografia antes de estabilizar entre -5000 m  e -6000
+      m?
+    * Como e por que as feições da anomalia ar-livre se correlacionam com a
+      topografia?
+    * Por que a anomalia Bouguer é sempre positiva?
+    * Por que a anomalia Bouguer é menos positiva sobre as ilhas?
+3. Gerar os mapas (mesmos da tarefa 1) para os dados do Japão e fazer um
+   perfil entre os pontos
+   $(130^\circ, 43^\circ)$ e $(148^\circ, 38^\circ)$.
+    * Por que a anomalia ar-livre é praticamente zero na placa do Pacífico e no
+      Mar do Japão (entre o Japão e as Coréias)?
+    * Por que a anomalia ar-livre apresenta um par negativo-positivo quando
+      passamos da crosta oceânica para as ilhas do Japão?
+    * Explique a relação entre a anomalia ar-livre, a topografia e a subducção.
+4. Gerar os mapas (mesmos da tarefa 1) para os dados dos Andes e fazer um
+   perfil entre os pontos
    $(285^\circ, -22^\circ)$ e $(300^\circ, -19^\circ)$.
+    * Por que a anomalia ar-livre tem seu minimo na fossa (onde está
+      acontecendo a subducção)?
+    * Por que a anomalia Bouguer é fortemente negativa na região das montanhas?
+5. **Extra**: Gerar os mapas (mesmos da tarefa 1) para os dados da Baía Hudson
+   e fazer um perfil entre os pontos
+   $(260^\circ, 45^\circ)$ e $(300^\circ, 70^\circ)$.
+    * Esta região está em equilíbrio isostático?
+    * O que significa a anomalia Bouguer ser praticamente constante (na média)
+      ao longo do perfil?
+    * Por que a anomalia ar-livre fica cada vez mais negativa quando mais
+      progredimos para o Norte do perfil?
+
 
 ### Fórmulas e valores
 
