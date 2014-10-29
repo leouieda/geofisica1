@@ -138,6 +138,8 @@ $\rho=1.00\ g/cm^3$ para a água dos oceanos.
 * Faça todas as contas em unidades do SI (kg, m, s) e depois converta para
   mGal. Para converter de $m/s^2$ para mGal, multiplique por 100000.
 * Fórmulas no Excel devem começar com `=`.
+* Para transformar a latitude de graus para radianos: `=A2*PI()/180`. Troque
+  `A2` pela célula da latitude na sua planilha.
 * Para calcular $\pi$ no Excel, use `PI()`.
 
 ### Mapas
