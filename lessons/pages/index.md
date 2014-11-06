@@ -47,7 +47,13 @@ Esses requisitos seguem a estrutura básica de qualquer trabalho científico:
 Introdução, Métodos, Resultados, Discussão e conclusões.
 Será cobrado o uso devido de referências bibliográficas.
 
-Tarefas das práticas marcadas como "Extra" não precisam estar nos relatórios.
+Siga a parte "Tarefas e perguntas" das práticas.
+Tarefas marcadas como "Extra" não precisam estar nos relatórios.
+**Todas as outras** devem estar presentes.
+
+**Modelo**: um modelo do relatório está disponível no
+[Google Docs](https://docs.google.com/document/d/1h7PrOWcFlL3U8t1Y-emUlTS5_YGfT-YFcw3S3Omm1BA/edit?usp=sharing).
+O arquivo também contém dicas de bibliografia, etc.
 
 **Dica**: usem a maior invenção do último século, a Internet. Existem diversos
 *sites* sobre geofísica, de [apostilas da Universidade da California](http://appliedgeophysics.lbl.gov/)
