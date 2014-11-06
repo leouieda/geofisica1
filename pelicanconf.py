@@ -4,8 +4,8 @@ from __future__ import unicode_literals
 import os
 
 AUTHOR = u'Leonardo Uieda'
-SITENAME = u'Geof\xedsica 1'
-SITESUBTITLE = u'Geologia - Universidade do Estado do Rio de Janeiro'
+SITENAME = u'Geof\xedsica 1 - gravimetria e magnetometria'
+SITESUBTITLE = u'Bacharelado em Geologia - Universidade do Estado do Rio de Janeiro'
 SITEURL = ''
 RELATIVE_URLS = True
 
@@ -54,7 +54,6 @@ INTERNALLINKS = [
     ['Magnetometria', 'category/magnetometria.html'],
     ]
 EXTERNALLINKS = [
-    ['<i class="fa fa-github fa-lg"></i>', 'https://github.com/leouieda/geofisica1'],
     ]
 
 
@@ -68,4 +67,11 @@ COPYRIGHT_NOTICE = """
 This work is licensed under a
 <a rel="license" href="http://creativecommons.org/licenses/by/4.0/deed.en_US"
 >Creative Commons Attribution 4.0 International License</a>.
+"""
+FOOTER = """
+Powered by <a href="http://getpelican.com/">Pelican</a>
+and <a href="http://python.org">Python</a>.
+Source code at
+<a
+href="https://github.com/leouieda/geofisica1">github.com/leouieda/geofisica1</a>
 """
