@@ -1,7 +1,10 @@
-title: Análise qualitativa: Transformações
+title: Transformações e filtros
 date: 15/09/2014
 slug: 5-transformacoes-mag
 
-* Revisão: transformada de Fourier, continuação para cima, derivadas.
+* A transformada de Fourier e o domínio da frequência.
+* Continuação para cima.
+* Derivadas.
 * Gradiente horizontal e gradiente total.
-* Redução ao pólo e ao equador.
+* Tilt-angle e deep-pass.
+* Redução ao pólo.

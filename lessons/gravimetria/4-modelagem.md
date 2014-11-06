@@ -1,6 +1,6 @@
-title: Análise quantitativa: Modelagem
+title: Modelagem e inversão
 date: 13/09/2014
-slug: 6-modelagem-grav
+slug: 4-modelagem-grav
 
 * Isolando o que não conhecemos.
 * Testando uma hipótese geológica.
