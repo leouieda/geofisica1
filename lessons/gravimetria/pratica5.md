@@ -37,14 +37,13 @@ instalados.
 1. Baixe o notebook prática 5:
    [pratica5.ipynb](https://raw.githubusercontent.com/leouieda/geofisica1/master/notebooks/pratica5.ipynb)
     1. Clique com o botão da direita no link e selecione "Salvar link como"
-    2. Selecione "Todos os arquivos" ao invés de "Arquivo de texto"
+    2. Verifique se em "Tipo" está escrito "Arquivo IPYNB" e não
+       "Arquivo de texto".
 2. Abra o programa `cmd.exe` (um "terminal").
 3. Digite: `ipython notebook` e aperte Enter.
    Isso deveria abrir um navegador (Chrome, Internet Explorer, Firefox) com
    um página semelhante a abaixo.
 4. Navegue até onde você salvou o notebook e clique nele.
-    * Se o notebook não aparecer na pasta, baixe-o de novo mas salve com outro
-      nome. Lembre-se selecionar "Todos os arquivos".
 
 ![Screenshot da notebook dashboard]({filename}/images/pratica5-screeshot-dashboard.png)
 
