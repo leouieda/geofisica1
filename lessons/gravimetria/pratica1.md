@@ -1,7 +1,6 @@
 title: Prática 1 - Mapas, interpolação e a gravidade da Terra
 date: 16/09/2014
 slug: pratica1
-category: Gravimetria-práticas
 
 ### Objetivos:
 
@@ -11,7 +10,7 @@ category: Gravimetria-práticas
   mais importante, quais não podem.
 * Visualizar os dados de gravidade mundial.
 * Discutir a relação entre os mapas gerados e o conteúdo da aula de
-  [gravitação](http://www.leouieda.com/geofisica1/lessons/gravimetria/1-gravitacao.html).
+  gravitação.
 
 ### Dados
 
@@ -42,7 +41,7 @@ Dados de gravidade foram gerados a partir de
 utilizando o [serviço online da ICGEM](http://icgem.gfz-potsdam.de/ICGEM/potato/Service.html).
 Os dados em `random-grid.txt`, `flight-grid.txt` e `regular-grid.txt` foram
 gerados com o arquivo
-[notebooks/pratica1.ipynb](http://nbviewer.ipython.org/github/leouieda/geofisica1/blob/master/notebooks/pratica1.ipynb).
+[lessons/gravimetria/pratica1.ipynb](http://nbviewer.ipython.org/github/leouieda/geofisica1/blob/master/lessons/gravimetria/pratica1.ipynb).
 
 ### Tarefas e perguntas
 
@@ -80,7 +79,7 @@ gerados com o arquivo
 ### Mapas
 
 O arquivo
-[notebooks/pratica1.ipynb](http://nbviewer.ipython.org/github/leouieda/geofisica1/blob/master/notebooks/pratica1.ipynb)
+[lessons/gravimetria/pratica1.ipynb](http://nbviewer.ipython.org/github/leouieda/geofisica1/blob/master/lessons/gravimetria/pratica1.ipynb)
 no [repositório da disciplina no Github](https://github.com/leouieda/geofisica1)
 contem os mapas das tarefas acima gerados por mim.
 Utilizem esses mapas como uma referência, ou objetivo,

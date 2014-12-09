@@ -1,7 +1,6 @@
 title: Prática 2 - A gravidade da Terra Normal e a anomalia ar-livre
 date: 16/09/2014
 slug: pratica2
-category: Gravimetria-práticas
 
 ### Objetivos:
 
@@ -116,7 +115,7 @@ $$
 ### Mapas
 
 O arquivo
-[notebooks/pratica2.ipynb](http://nbviewer.ipython.org/github/leouieda/geofisica1/blob/master/notebooks/pratica2.ipynb)
+[lessons/gravimetria/pratica2.ipynb](http://nbviewer.ipython.org/github/leouieda/geofisica1/blob/master/lessons/gravimetria/pratica2.ipynb)
 no [repositório da disciplina no Github](https://github.com/leouieda/geofisica1)
 contem os mapas das tarefas acima gerados por mim.
 Utilizem esses mapas como uma referência, ou objetivo,

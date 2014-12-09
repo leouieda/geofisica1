@@ -1,7 +1,6 @@
 title: Prática 5 - Modelagem direta 2D para testar hipóteses
 date: 16/09/2014
 slug: pratica5
-category: Gravimetria-práticas
 
 ### Objetivos
 
@@ -21,7 +20,7 @@ A imagem abaixo mostra um screenshot do notebook que será usado nesta prática.
 ![Screenshot da prática 5]({filename}/images/pratica5-screeshot-notebook.png)
 
 As soluções das práticas anteriores
-([exemplo](http://nbviewer.ipython.org/github/leouieda/geofisica1/blob/master/notebooks/pratica4.ipynb))
+([exemplo](http://nbviewer.ipython.org/github/leouieda/geofisica1/blob/master/lessons/gravimetria/pratica4.ipynb))
 foram feitas em IPython notebooks.
 As solução não eram interativas pois eram somente visualizações dos notebooks
 na internet.
@@ -38,7 +37,7 @@ e-mail para a [lista de e-mails](https://groups.google.com/forum/#!forum/geofisi
 que eu darei as instruções do que baixar e como instalar.
 
 1. Baixe o notebook prática 5:
-   [pratica5.ipynb](https://raw.githubusercontent.com/leouieda/geofisica1/master/notebooks/pratica5.ipynb)
+   [pratica5.ipynb](https://raw.githubusercontent.com/leouieda/geofisica1/master/lessons/gravimetria/pratica5.ipynb)
     1. Clique com o botão da direita no link e selecione "Salvar link como"
     2. Verifique se em "Tipo" está escrito "Arquivo IPYNB" e não
        "Arquivo de texto".
@@ -66,4 +65,4 @@ feitas e as perguntas que devem ser discutidas sobre cada tarefa.
 ### Ver o notebook online
 
 Para ver o  notebook online (versão não-interativa) acesse:
-[notebooks/pratica5.ipynb](http://nbviewer.ipython.org/github/leouieda/geofisica1/blob/master/notebooks/pratica5.ipynb)
+[lessons/gravimetria/pratica5.ipynb](http://nbviewer.ipython.org/github/leouieda/geofisica1/blob/master/lessons/gravimetria/pratica5.ipynb)

@@ -1,7 +1,6 @@
 title: Prática 3 - Anomalia Bouguer
 date: 16/09/2014
 slug: pratica3
-category: Gravimetria-práticas
 
 ### Objetivos:
 
@@ -109,7 +108,7 @@ radianos da sua planilha.
 ### Mapas
 
 O arquivo
-[notebooks/pratica3.ipynb](http://nbviewer.ipython.org/github/leouieda/geofisica1/blob/master/notebooks/pratica3.ipynb)
+[lessons/gravimetria/pratica3.ipynb](http://nbviewer.ipython.org/github/leouieda/geofisica1/blob/master/lessons/gravimetria/pratica3.ipynb)
 no [repositório da disciplina no Github](https://github.com/leouieda/geofisica1)
 contem os mapas das tarefas acima gerados por mim.
 Utilizem esses mapas como uma referência, ou objetivo,
