@@ -12,10 +12,13 @@ RELATIVE_URLS = True
 TIMEZONE = u'America/Sao_Paulo'
 DEFAULT_LANG = u'pt'
 
-PATH = 'lessons'
+PATH = '.'
+ARTICLE_PATHS = ['lessons']
 ARTICLE_URL = 'lessons/{category}/{slug}.html'
-ARTICLE_SAVE_AS = 'lessons/{category}/{slug}.html'
+ARTICLE_SAVE_AS = ARTICLE_URL
 PAGE_PATHS = ['pages']
+PAGE_URL = '{slug}.html'
+PAGE_SAVE_AS = PAGE_URL
 
 STATIC_PATHS = [
     'images',
@@ -49,8 +52,8 @@ THEME = 'theme'
 
 INTERNALLINKS = [
     ['Sobre', 'index.html'],
+    ['Ementa', 'ementa.html'],
     ['Gravimetria', 'category/gravimetria.html'],
-    ['Gravimetria-Práticas', 'category/gravimetria-praticas.html'],
     ['Magnetometria', 'category/magnetometria.html'],
     ]
 EXTERNALLINKS = [

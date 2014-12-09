@@ -1,7 +1,6 @@
 title: Prática 4 - Anomalias de lugares interessantes
 date: 16/09/2014
 slug: pratica4
-category: Gravimetria-práticas
 
 ### Objetivos
 
@@ -145,7 +144,7 @@ $\rho=1.00\ g/cm^3$ para a água dos oceanos.
 ### Mapas
 
 O arquivo
-[notebooks/pratica4.ipynb](http://nbviewer.ipython.org/github/leouieda/geofisica1/blob/master/notebooks/pratica4.ipynb)
+[lessons/gravimetria/pratica4.ipynb](http://nbviewer.ipython.org/github/leouieda/geofisica1/blob/master/lessons/gravimetria/pratica4.ipynb)
 no [repositório da disciplina no Github](https://github.com/leouieda/geofisica1)
 contem os mapas das tarefas acima gerados por mim.
 Utilizem esses mapas como uma referência, ou objetivo,

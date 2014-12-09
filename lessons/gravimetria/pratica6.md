@@ -1,7 +1,6 @@
 title: Prática 6 - Inversão para estimar o embasamento de uma bacia sedimentar
 date: 16/09/2014
 slug: pratica6
-category: Gravimetria-práticas
 
 ### Objetivos
 
@@ -25,7 +24,7 @@ e-mail para a [lista de e-mails](https://groups.google.com/forum/#!forum/geofisi
 que eu darei as instruções do que baixar e como instalar.
 
 1. Baixe o notebook prática:
-   [pratica6.ipynb](https://raw.githubusercontent.com/leouieda/geofisica1/master/notebooks/pratica6.ipynb)
+   [pratica6.ipynb](https://raw.githubusercontent.com/leouieda/geofisica1/master/lessons/gravimetria/pratica6.ipynb)
     1. Clique com o botão da direita no link e selecione "Salvar link como"
     2. Verifique se em "Tipo" está escrito "Arquivo IPYNB" e não
        "Arquivo de texto".
@@ -51,4 +50,4 @@ feitas e as perguntas que devem ser discutidas sobre cada tarefa.
 ### Ver o notebook online
 
 Para ver o  notebook online (versão não interativa) acesse:
-[notebooks/pratica6.ipynb](http://nbviewer.ipython.org/github/leouieda/geofisica1/blob/master/notebooks/pratica6.ipynb)
+[lessons/gravimetria/pratica6.ipynb](http://nbviewer.ipython.org/github/leouieda/geofisica1/blob/master/lessons/gravimetria/pratica6.ipynb)

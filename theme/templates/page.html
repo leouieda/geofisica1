@@ -5,7 +5,6 @@
 {% endblock %}
 
 {% block content %}
-    <h2>{{ page.title }}</h2>
     {% import 'translations.html' as translations with context %}
     {{ translations.translations_for(page) }}
     {{ page.content }}

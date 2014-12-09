@@ -3,7 +3,6 @@ PELICAN=pelican
 PELICANOPTS=
 
 BASEDIR=$(CURDIR)
-INPUTDIR=$(BASEDIR)/lessons
 OUTPUTDIR=$(BASEDIR)/output
 CONFFILE=$(BASEDIR)/pelicanconf.py
 PUBLISHCONF=$(BASEDIR)/publishconf.py
@@ -21,7 +20,7 @@ help:
 	@echo ''
 
 $(OUTPUTDIR)/%.html:
-	$(PELICAN) $(INPUTDIR) -o $(OUTPUTDIR) -s $(CONFFILE) $(PELICANOPTS)
+	$(PELICAN) -o $(OUTPUTDIR) -s $(CONFFILE) $(PELICANOPTS)
 
 clean:
 	[ ! -d $(OUTPUTDIR) ] || find $(OUTPUTDIR) -mindepth 1 -delete
