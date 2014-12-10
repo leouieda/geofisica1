@@ -23,9 +23,6 @@
     <h2><a href="{{ SITEURL }}/{{ article.url }}" rel="bookmark"
         title="Permalink to {{ article.title|striptags }}">{{ article.title }}</a></h2>
 
-    {% import 'translations.html' as translations with context %}
-    {{ translations.translations_for(article) }}
-
     {{ article.content }}
 
     <!-- DISQUS -->
