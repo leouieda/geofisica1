@@ -45,6 +45,10 @@ envolverão exercícios realizados nos computadores do laboratório.  Os
 exercícios serão feitos em [Jupyter notebooks](http://jupyter.org/) utilizando
 o software livre [Fatiando a Terra](http://www.fatiando.org/).
 
+**Os questionários valem nota** (0-10) e não poderão ser feitos fora da aula
+(ver "Avaliação" abaixo).
+**Procurem não faltar nas aulas práticas.**
+
 Eu encorajo que vocês **perguntem e discutam** durante as aulas. Não
 deixe uma dúvida para depois. Minha política é que não existem perguntas
 "bestas", "irrelevantes", "óbvias". Não tolero comportamento ofensivo e a
