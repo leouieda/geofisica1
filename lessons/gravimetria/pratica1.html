@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="utf-8" />
+        <meta name="author" content="Leonardo Uieda"/>
+
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0"/>
+
+    <title>    Prática 1 - Mapas, interpolação e a gravidade da Terra - Geofísica 1 - gravimetria e magnetometria
+</title>
+
+    <link href="http://www.leouieda.com/geofisica1/theme/css/style.css" type="text/css" rel="stylesheet">
+
+    <link rel="shortcut icon" href="http://www.leouieda.com/geofisica1/favicon.png">
+
+    <!--Include the Font Awesome CSS-->
+    <link rel="stylesheet" href="http://www.leouieda.com/geofisica1/theme/font-awesome/css/font-awesome.min.css">
+
+    <!-- Google Analytics -->
+    
+
+</head>
+
+<body>
+    <header>
+        <h1><a href="http://www.leouieda.com/geofisica1">Geofísica 1 - gravimetria e magnetometria</a></h1>
+        <aside>Bacharelado em Geologia - Universidade do Estado do Rio de Janeiro</aside>
+        <nav><ul>
+                <li><a href="http://www.leouieda.com/geofisica1/index.html">Sobre</a></li>
+                <li><a href="http://www.leouieda.com/geofisica1/ementa.html">Ementa</a></li>
+                <li><a href="http://www.leouieda.com/geofisica1/category/gravimetria.html">Gravimetria</a></li>
+                <li><a href="http://www.leouieda.com/geofisica1/category/magnetometria.html">Magnetometria</a></li>
+        </ul></nav>
+    </header>
+
+    <div class="content">
+    <h2><a href="http://www.leouieda.com/geofisica1/lessons/gravimetria/pratica1.html" rel="bookmark"
+        title="Permalink to Prática 1 - Mapas, interpolação e a gravidade da Terra">Prática 1 - Mapas, interpolação e a gravidade da Terra</a></h2>
+
+    <h3>Objetivos:</h3>
+<ul>
+<li>Aprender a gerar um mapa de algum dado geofísico.</li>
+<li>Entender a influência da interpolação no mapa gerado.</li>
+<li>Entender quais interpretações podem ser feitas sobre os mapas e,
+  mais importante, quais não podem.</li>
+<li>Visualizar os dados de gravidade mundial.</li>
+<li>Discutir a relação entre os mapas gerados e o conteúdo da aula de
+  gravitação.</li>
+</ul>
+<h3>Dados</h3>
+<p>Para esta prática usaremos os arquivos (clique para baixar):</p>
+<ul>
+<li><a href="https://raw.githubusercontent.com/leouieda/geofisica1/master/data/random-grid.txt">random-grid.txt</a>:
+  Dados "fabricados". Arquivo
+  <a href="http://en.wikipedia.org/wiki/ASCII">ASCII</a> com 4 colunas (x, y, z, dado).
+  Dados distribuídos aleatoriamente.</li>
+<li><a href="https://raw.githubusercontent.com/leouieda/geofisica1/master/data/regular-grid.txt">regular-grid.txt</a>:
+  Versão completa dos dados fabricados. Disposto em uma
+  malha regular.</li>
+<li><a href="https://raw.githubusercontent.com/leouieda/geofisica1/master/data/eigen-6c3stat-0_5-mundo.gdf">eigen-6c3stat-0_5-mundo.gdf</a>:
+  Gravidade mundial. Arquivo ASCII com 4 colunas
+  (lon, lat, altitude, gravidade). Malha regular com espaçamento de 0.5 grau.
+  Gravidade em <a href="http://en.wikipedia.org/wiki/Gal_%28unit%29">mGal</a>.
+  Gravidade medida na superfície da Terra.</li>
+</ul>
+<p>Os dados devem estar presentes nos computadores do laboratório.
+Estes dados também podem ser baixados
+da pasta <code>data</code> do
+<a href="https://github.com/leouieda/geofisica1">repositório da disciplina no Github</a>.
+Após clicar no nome do arquivo, selecione "Raw" para baixar os dados.</p>
+<p>Dados de gravidade foram gerados a partir de
+<a href="http://en.wikipedia.org/wiki/Spherical_harmonics">modelos de harmônicos esféricos</a>
+utilizando o <a href="http://icgem.gfz-potsdam.de/ICGEM/potato/Service.html">serviço online da ICGEM</a>.
+Os dados em <code>random-grid.txt</code>, <code>flight-grid.txt</code> e <code>regular-grid.txt</code> foram
+gerados com o arquivo
+<a href="http://nbviewer.ipython.org/github/leouieda/geofisica1/blob/master/lessons/gravimetria/pratica1.ipynb">lessons/gravimetria/pratica1.ipynb</a>.</p>
+<h3>Tarefas e perguntas</h3>
+<ol>
+<li>Faça um mapa de curvas de contorno coloridas dos dados do arquivo <code>random-grid.txt</code>.<ul>
+<li>Quais são as feições gerais deste mapa?</li>
+</ul>
+</li>
+<li>Gere outros mapas do mesmo dado usando outros métodos de interpolação.<ul>
+<li>Como diferem os mapas gerados com diferentes métodos?</li>
+<li>Onde estão as maiores diferenças?</li>
+<li><em>Dica</em>: Mostre a localização dos pontos originais nos mapas (os pontos
+  aleatórios do arquivo <code>random-grid.txt</code>.</li>
+</ul>
+</li>
+<li>Gere outro mapa utilizando um valor grande (e.g., 1000 ou 1500) para o
+   espaçamento do <em>grid</em>.<ul>
+<li>Qual mapa representa melhor "a realidade" (os dados)?
+  O mapa com espaçamento pequeno (100, 200, ou 500)
+  ou o mapa com espaçamento grande?</li>
+<li>Como a escolha do espaçamento do  <em>grid</em> e método de interpolação
+  influenciam a interpretação dos mapas?</li>
+</ul>
+</li>
+<li>Gere um mapa do arquivo <code>regular-grid.txt</code>. Estes são os dados originais
+   utilizados para gerar o <code>random-grid.txt</code>.<ul>
+<li>Qual é a diferença entre os dados originais e os dados interpolados a
+  partir de <code>random-grid.txt</code>?</li>
+<li>Algum dos métodos de interpolação é capaz de representar perfeitamente os
+  dados originais?</li>
+</ul>
+</li>
+<li>Faça um mapa da gravidade mundial <code>eigen-6c3sat-0_5-mundo.gdf</code>.<ul>
+<li>Qual é a feição mais marcante deste mapa?</li>
+<li>O que causa essa feição?</li>
+<li>Como a escala de cor influencia na percepção do mapa?</li>
+<li>Como é a gravidade sobre as grandes montanhas (Himalaias e Andes)?</li>
+<li>Por que ela é assim?</li>
+<li>Como poderíamos realçar, ou focar, nas partes da gravidade que são
+  causadas por feições geológicas desconhecidas? Em outras palavras, como
+  isolar as partes da gravidade que são anômalas?</li>
+</ul>
+</li>
+<li><strong>Extra</strong>: Faça um mapa da topografia mundial <code>etopo1-0_5-mundo.gdf</code>.</li>
+</ol>
+<h3>Mapas</h3>
+<p>O arquivo
+<a href="http://nbviewer.ipython.org/github/leouieda/geofisica1/blob/master/lessons/gravimetria/pratica1.ipynb">lessons/gravimetria/pratica1.ipynb</a>
+no <a href="https://github.com/leouieda/geofisica1">repositório da disciplina no Github</a>
+contem os mapas das tarefas acima gerados por mim.
+Utilizem esses mapas como uma referência, ou objetivo,
+quando forem fazer o relatório.
+<strong>Não usem esses mapas no relatório</strong>.
+Usem os mapas que vocês mesmos fizeram.</p>
+
+    <!-- DISQUS -->
+
+    </div>
+
+    <footer>
+        
+<a rel="license"
+ href="http://creativecommons.org/licenses/by/4.0/deed.en_US"
+><img alt="Creative Commons License" style="border-width:0"
+ src="http://i.creativecommons.org/l/by/4.0/88x31.png"
+/></a><br />
+This work is licensed under a
+<a rel="license" href="http://creativecommons.org/licenses/by/4.0/deed.en_US"
+>Creative Commons Attribution 4.0 International License</a>.
+
+        <br/>
+        
+Powered by <a href="http://getpelican.com/">Pelican</a>
+and <a href="http://python.org">Python</a>.
+Source code at
+<a
+href="https://github.com/leouieda/geofisica1">github.com/leouieda/geofisica1</a>
+
+    </footer>
+</div>
+</body>
+</html>

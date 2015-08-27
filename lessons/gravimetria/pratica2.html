@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="utf-8" />
+        <meta name="author" content="Leonardo Uieda"/>
+
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0"/>
+
+    <title>    Prática 2 - A gravidade da Terra Normal e a anomalia ar-livre - Geofísica 1 - gravimetria e magnetometria
+</title>
+
+    <link href="http://www.leouieda.com/geofisica1/theme/css/style.css" type="text/css" rel="stylesheet">
+
+    <link rel="shortcut icon" href="http://www.leouieda.com/geofisica1/favicon.png">
+
+    <!--Include the Font Awesome CSS-->
+    <link rel="stylesheet" href="http://www.leouieda.com/geofisica1/theme/font-awesome/css/font-awesome.min.css">
+
+    <!-- Google Analytics -->
+    
+
+</head>
+
+<body>
+    <header>
+        <h1><a href="http://www.leouieda.com/geofisica1">Geofísica 1 - gravimetria e magnetometria</a></h1>
+        <aside>Bacharelado em Geologia - Universidade do Estado do Rio de Janeiro</aside>
+        <nav><ul>
+                <li><a href="http://www.leouieda.com/geofisica1/index.html">Sobre</a></li>
+                <li><a href="http://www.leouieda.com/geofisica1/ementa.html">Ementa</a></li>
+                <li><a href="http://www.leouieda.com/geofisica1/category/gravimetria.html">Gravimetria</a></li>
+                <li><a href="http://www.leouieda.com/geofisica1/category/magnetometria.html">Magnetometria</a></li>
+        </ul></nav>
+    </header>
+
+    <div class="content">
+    <h2><a href="http://www.leouieda.com/geofisica1/lessons/gravimetria/pratica2.html" rel="bookmark"
+        title="Permalink to Prática 2 - A gravidade da Terra Normal e a anomalia ar-livre">Prática 2 - A gravidade da Terra Normal e a anomalia ar-livre</a></h2>
+
+    <h3>Objetivos:</h3>
+<ul>
+<li>Visualizar os efeitos que a escala de cor tem na interpretação dos mapas</li>
+<li>Aprender a calcular a gravidade da Terra Normal e a anomalias ar-livre</li>
+<li>Gerar um mapa de anomalia ar-livre para o mundo todo</li>
+<li>Observar e entender as causas das principais feições desta anomalia</li>
+</ul>
+<h3>Dados</h3>
+<p>Para esta prática usaremos o arquivo:</p>
+<ul>
+<li><a href="https://raw.githubusercontent.com/leouieda/geofisica1/master/data/eigen-6c3stat-0_5-mundo.gdf">eigen-6c3stat-0_5-mundo.gdf</a>:
+  Gravidade mundial. Arquivo ASCII com 4 colunas
+  (lon, lat, altitude, gravidade). Malha regular com espaçamento de 0.5 grau.
+  Gravidade em <a href="http://en.wikipedia.org/wiki/Gal_%28unit%29">mGal</a>.
+  Gravidade medida na superfície da Terra.</li>
+</ul>
+<p>Os dados devem estar presentes nos computadores do laboratório.
+Estes dados podem ser baixados do
+da pasta <code>data</code> do
+<a href="https://github.com/leouieda/geofisica1">repositório da disciplina no Github</a>.
+Após clicar no nome do arquivo, selecione "Raw" para baixar os dados.</p>
+<p>Dados de gravidade foram gerados a partir de
+<a href="http://en.wikipedia.org/wiki/Spherical_harmonics">modelos de harmônicos esféricos</a>
+utilizando o <a href="http://icgem.gfz-potsdam.de/ICGEM/potato/Service.html">serviço online da ICGEM</a>.</p>
+<h3>Tarefas e perguntas</h3>
+<ol>
+<li>Carregar os dados de gravidade mundial <code>eigen-6c3sat-0_5-mundo.gdf</code>
+   e fazer um mapa utilizando uma escala de cor linear (ver "Dicas" abaixo).<ul>
+<li>Como a escala de cor influencia a percepção dos dados?</li>
+</ul>
+</li>
+<li>Calcular a gravidade da Terra Normal (<span class="math">\(\gamma\)</span>) nos mesmos pontos
+   (lat, lon) em que foram medidos os dados de gravidade.
+   Utilize o elipsoide WGS84.
+   Faça um mapa com esses valores utilizando a mesma escala de cor que antes.<ul>
+<li>A gravidade da Terra Normal é como você esperava?</li>
+</ul>
+</li>
+<li>Calcule a anomalia ar-livre e faça um mapa com uma escala de cor divergente.<ul>
+<li>Por que a anomalia ar-livre não é mais parecida com a topografia? Nós
+  removemos o efeito da Terra Normal e da distância então só deveria restar
+  o efeito da massa topográfica.</li>
+<li>Por que é muito pequena no meio do Pacífico, Brasil e Austrália?</li>
+<li>Por que é positiva e grande no Havaí?</li>
+<li>Por que é negativa/positiva/negativa se traçarmos um perfil cortando os
+  Andes ou Himalaias?</li>
+<li>Por que apresenta um par positivo/negativo nas trincheiras?</li>
+</ul>
+</li>
+</ol>
+<h3>Fórmulas e valores</h3>
+<p>Todas as fórmulas e valores foram retirados do livro de
+Hofmann-Wellenhof e Moritz (2006).</p>
+<p>A gravidade de um elipsoide calculada na sua superfície é
+data pela equação de Somigliana de 1976,</p>
+<p>
+<div class="math">$$
+\gamma(\varphi) =
+\frac{a \gamma_a \cos^2 \varphi + b \gamma_b \sin^2\varphi}{
+      \sqrt{a^2 \cos^2 \varphi + b^2 \sin^2 \varphi}},
+$$</div>
+</p>
+<p>em que <span class="math">\(\varphi\)</span> é a latitude, <span class="math">\(a\)</span> é o eixo maior do elipsoide, <span class="math">\(b\)</span> é o
+eixo menor, <span class="math">\(\gamma_a\)</span> é a gravidade do elipsoide no equador e <span class="math">\(\gamma_b\)</span> é a
+gravidade no polo.</p>
+<p>Vamos utilizar o elipsoide de referência
+<a href="http://en.wikipedia.org/wiki/World_Geodetic_System">WGS84</a>:</p>
+<ul>
+<li>a = 6378137 metros</li>
+<li>b = 6356752.3142 metros</li>
+<li><span class="math">\(\gamma_a\)</span> = 9.7803253359 <span class="math">\(m/s^2\)</span></li>
+<li><span class="math">\(\gamma_b\)</span> = 9.8321849378 <span class="math">\(m/s^2\)</span></li>
+</ul>
+<p>Para calcular o valor de <span class="math">\(\gamma\)</span> no mesmo em que medimos a gravidade (vamos
+chamar de ponto P)</p>
+<p>
+<div class="math">$$
+\gamma_P = \gamma - 0.3086H
+$$</div>
+</p>
+<p>em que <span class="math">\(H\)</span> é a altitude geométrica do ponto de observação.</p>
+<p>A anomalia ar-livre é a diferença entre a gravidade medida em P e a gravidade
+do elipsoide calculada também em P</p>
+<p>
+<div class="math">$$
+\Delta g_{AL} = g - \gamma_P = g - (\gamma - 0.3086H) = g - \gamma + 0.3086H
+$$</div>
+</p>
+<h3>Dicas</h3>
+<ul>
+<li>Entre no <a href="http://peterkovesi.com/projects/colourmaps/">site do Peter Kovesi</a>
+  e escolha as escalas de cor. Os arquivos disponibilizados no site devem estar
+  nos computadores do LAGEX e acessíveis pelo Oasis Montaj.
+  Se não estiverem, baixem o arquivo <code>Geosoft.zip</code> do site.
+  Lá estarão os arquivos com as escalas de cor.</li>
+<li>Carregue seus dados no Excel e utilize fórmulas para calcular os
+  valores das anomalias.</li>
+<li>Cuidado com <code>.</code> e <code>,</code> para representar decimais. O Geosoft utiliza <code>.</code> mas o
+  Excel em português utiliza <code>,</code>. Utilize a função "Localizar e substituir"
+  do Bloco de Notas (<strong>não use o WordPad pois é muito lento</strong>).</li>
+<li>Faça todas as contas em unidades do SI (kg, m, s) e depois converta para
+  mGal. Para converter de <span class="math">\(m/s^2\)</span> para mGal, multiplique por 100000.</li>
+<li>Cuidado com <code>sin</code> e <code>cos</code>! Geralmente essas funções querem ângulos em
+  radianos. Converta latitude de graus para radianos multiplicando por
+  <span class="math">\(\pi/180\)</span>.</li>
+<li>Fórmulas no Excel devem começar com <code>=</code>.</li>
+<li>Para calcular <span class="math">\(\pi\)</span> no Excel, use <code>PI()</code>.</li>
+</ul>
+<h3>Mapas</h3>
+<p>O arquivo
+<a href="http://nbviewer.ipython.org/github/leouieda/geofisica1/blob/master/lessons/gravimetria/pratica2.ipynb">lessons/gravimetria/pratica2.ipynb</a>
+no <a href="https://github.com/leouieda/geofisica1">repositório da disciplina no Github</a>
+contem os mapas das tarefas acima gerados por mim.
+Utilizem esses mapas como uma referência, ou objetivo,
+quando forem fazer o relatório.
+<strong>Não usem esses mapas no relatório</strong>.
+Usem os mapas que vocês mesmos fizeram.</p>
+<h3>Referências</h3>
+<p>Hofmann-Wellenhof, B., and H. Moritz (2006), Physical Geodesy, 2nd, corr. ed.
+2006 edition., Springer, Wien ; New York.</p>
+<script type="text/javascript">if (!document.getElementById('mathjaxscript_pelican_#%@#$@#')) {
+    var mathjaxscript = document.createElement('script');
+    mathjaxscript.id = 'mathjaxscript_pelican_#%@#$@#';
+    mathjaxscript.type = 'text/javascript';
+    mathjaxscript.src = '//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML';
+    mathjaxscript[(window.opera ? "innerHTML" : "text")] =
+        "MathJax.Hub.Config({" +
+        "    config: ['MMLorHTML.js']," +
+        "    TeX: { extensions: ['AMSmath.js','AMSsymbols.js','noErrors.js','noUndefined.js'], equationNumbers: { autoNumber: 'AMS' } }," +
+        "    jax: ['input/TeX','input/MathML','output/HTML-CSS']," +
+        "    extensions: ['tex2jax.js','mml2jax.js','MathMenu.js','MathZoom.js']," +
+        "    displayAlign: 'center'," +
+        "    displayIndent: '0em'," +
+        "    showMathMenu: true," +
+        "    tex2jax: { " +
+        "        inlineMath: [ ['\\\\(','\\\\)'] ], " +
+        "        displayMath: [ ['$$','$$'] ]," +
+        "        processEscapes: true," +
+        "        preview: 'TeX'," +
+        "    }, " +
+        "    'HTML-CSS': { " +
+        "        styles: { '.MathJax_Display, .MathJax .mo, .MathJax .mi, .MathJax .mn': {color: 'black ! important'} }" +
+        "    } " +
+        "}); ";
+    (document.body || document.getElementsByTagName('head')[0]).appendChild(mathjaxscript);
+}
+</script>
+
+    <!-- DISQUS -->
+
+    </div>
+
+    <footer>
+        
+<a rel="license"
+ href="http://creativecommons.org/licenses/by/4.0/deed.en_US"
+><img alt="Creative Commons License" style="border-width:0"
+ src="http://i.creativecommons.org/l/by/4.0/88x31.png"
+/></a><br />
+This work is licensed under a
+<a rel="license" href="http://creativecommons.org/licenses/by/4.0/deed.en_US"
+>Creative Commons Attribution 4.0 International License</a>.
+
+        <br/>
+        
+Powered by <a href="http://getpelican.com/">Pelican</a>
+and <a href="http://python.org">Python</a>.
+Source code at
+<a
+href="https://github.com/leouieda/geofisica1">github.com/leouieda/geofisica1</a>
+
+    </footer>
+</div>
+</body>
+</html>

@@ -1,0 +1,511 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Geofísica 1 - gravimetria e magnetometria</title><link>http://www.leouieda.com/geofisica1/</link><description>Bacharelado em Geologia - Universidade do Estado do Rio de Janeiro</description><atom:link href="http://www.leouieda.com/geofisica1/feeds/leonardo-uieda.rss.xml" rel="self"></atom:link><lastBuildDate>Tue, 16 Sep 2014 00:00:00 -0300</lastBuildDate><item><title>Prática 1 - O IGRF e a anomalia magnética de campo total</title><link>http://www.leouieda.com/geofisica1/lessons/magnetometria/pratica1.html</link><description>&lt;h3&gt;Objetivos&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Visualizar o campo magnético de referência
+  &lt;a href="http://en.wikipedia.org/wiki/International_Geomagnetic_Reference_Field"&gt;IGRF&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Verificar os efeitos da variação secular do campo geomagnético no último
+  século.&lt;/li&gt;
+&lt;li&gt;Visualizar o campo magnético induzido em um corpo (cubo) para diferentes
+  inclinações.&lt;/li&gt;
+&lt;li&gt;Entender a relação entre campo magnético induzido, o campo magnético da Terra
+  (IGRF) e a anomalia magnética de campo total.&lt;/li&gt;
+&lt;li&gt;Entender o papel da  inclinação e  declinação magnética na forma da anomalia.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Instruções&lt;/h3&gt;
+&lt;p&gt;Essa prática será feita em um
+&lt;a href="http://ipython.org/notebook.html"&gt;IPython notebook&lt;/a&gt;.
+A parte específica da geofísica está implementada na biblioteca &lt;a href="http://fatiando.org"&gt;Fatiando a
+Terra&lt;/a&gt;.
+Se quiser instalar os programas necessários no próprio computador, mande um
+e-mail para a &lt;a href="https://groups.google.com/forum/#!forum/geofisica1"&gt;lista de e-mails&lt;/a&gt;
+que eu darei as instruções do que baixar e como instalar.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Baixe o notebook prática:
+   &lt;a href="https://raw.githubusercontent.com/leouieda/geofisica1/master/lessons/magnetometria/pratica1.ipynb"&gt;pratica1.ipynb&lt;/a&gt;&lt;ol&gt;
+&lt;li&gt;Clique com o botão da direita no link e selecione "Salvar link como"&lt;/li&gt;
+&lt;li&gt;Verifique se em "Tipo" está escrito "Arquivo IPYNB" e não
+   "Arquivo de texto".&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;Abra o programa &lt;code&gt;cmd.exe&lt;/code&gt; (um "terminal").&lt;/li&gt;
+&lt;li&gt;Digite: &lt;code&gt;ipython notebook&lt;/code&gt; e aperte Enter.
+   Isso deveria abrir um navegador (Chrome, Internet Explorer, Firefox) com
+   a página inicial do IPython notebook.
+   Se um navegador não abrir automaticamente, abra um e entre em
+   &lt;a href="http://127.0.0.1:8888/"&gt;http://127.0.0.1:8888/&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Navegue até onde você salvou o notebook e clique nele.&lt;/li&gt;
+&lt;li&gt;Siga as instruções no notebook. Lá você encontrar as tarefas que devem ser
+   feitas e as perguntas que devem ser discutidas sobre cada tarefa.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3&gt;Salvando as figuras&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Nas janelas interativas de modelagem: clique no ícone do disquete.&lt;/li&gt;
+&lt;li&gt;As imagens inseridas no notebook: clique com o botão da direita e selecione
+  "Salvar imagem como".&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Ver o notebook online&lt;/h3&gt;
+&lt;p&gt;Para ver o  notebook online (versão não interativa) acesse:
+&lt;a href="http://nbviewer.ipython.org/github/leouieda/geofisica1/blob/master/lessons/magnetometria/pratica1.ipynb"&gt;lessons/magnetometria/pratica1.ipynb&lt;/a&gt;&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Leonardo Uieda</dc:creator><pubDate>Tue, 16 Sep 2014 00:00:00 -0300</pubDate><guid>tag:www.leouieda.com,2014-09-16:geofisica1/lessons/magnetometria/pratica1.html</guid></item><item><title>Prática 1 - Mapas, interpolação e a gravidade da Terra</title><link>http://www.leouieda.com/geofisica1/lessons/gravimetria/pratica1.html</link><description>&lt;h3&gt;Objetivos:&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Aprender a gerar um mapa de algum dado geofísico.&lt;/li&gt;
+&lt;li&gt;Entender a influência da interpolação no mapa gerado.&lt;/li&gt;
+&lt;li&gt;Entender quais interpretações podem ser feitas sobre os mapas e,
+  mais importante, quais não podem.&lt;/li&gt;
+&lt;li&gt;Visualizar os dados de gravidade mundial.&lt;/li&gt;
+&lt;li&gt;Discutir a relação entre os mapas gerados e o conteúdo da aula de
+  gravitação.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Dados&lt;/h3&gt;
+&lt;p&gt;Para esta prática usaremos os arquivos (clique para baixar):&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://raw.githubusercontent.com/leouieda/geofisica1/master/data/random-grid.txt"&gt;random-grid.txt&lt;/a&gt;:
+  Dados "fabricados". Arquivo
+  &lt;a href="http://en.wikipedia.org/wiki/ASCII"&gt;ASCII&lt;/a&gt; com 4 colunas (x, y, z, dado).
+  Dados distribuídos aleatoriamente.&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://raw.githubusercontent.com/leouieda/geofisica1/master/data/regular-grid.txt"&gt;regular-grid.txt&lt;/a&gt;:
+  Versão completa dos dados fabricados. Disposto em uma
+  malha regular.&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://raw.githubusercontent.com/leouieda/geofisica1/master/data/eigen-6c3stat-0_5-mundo.gdf"&gt;eigen-6c3stat-0_5-mundo.gdf&lt;/a&gt;:
+  Gravidade mundial. Arquivo ASCII com 4 colunas
+  (lon, lat, altitude, gravidade). Malha regular com espaçamento de 0.5 grau.
+  Gravidade em &lt;a href="http://en.wikipedia.org/wiki/Gal_%28unit%29"&gt;mGal&lt;/a&gt;.
+  Gravidade medida na superfície da Terra.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Os dados devem estar presentes nos computadores do laboratório.
+Estes dados também podem ser baixados
+da pasta &lt;code&gt;data&lt;/code&gt; do
+&lt;a href="https://github.com/leouieda/geofisica1"&gt;repositório da disciplina no Github&lt;/a&gt;.
+Após clicar no nome do arquivo, selecione "Raw" para baixar os dados.&lt;/p&gt;
+&lt;p&gt;Dados de gravidade foram gerados a partir de
+&lt;a href="http://en.wikipedia.org/wiki/Spherical_harmonics"&gt;modelos de harmônicos esféricos&lt;/a&gt;
+utilizando o &lt;a href="http://icgem.gfz-potsdam.de/ICGEM/potato/Service.html"&gt;serviço online da ICGEM&lt;/a&gt;.
+Os dados em &lt;code&gt;random-grid.txt&lt;/code&gt;, &lt;code&gt;flight-grid.txt&lt;/code&gt; e &lt;code&gt;regular-grid.txt&lt;/code&gt; foram
+gerados com o arquivo
+&lt;a href="http://nbviewer.ipython.org/github/leouieda/geofisica1/blob/master/lessons/gravimetria/pratica1.ipynb"&gt;lessons/gravimetria/pratica1.ipynb&lt;/a&gt;.&lt;/p&gt;
+&lt;h3&gt;Tarefas e perguntas&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;Faça um mapa de curvas de contorno coloridas dos dados do arquivo &lt;code&gt;random-grid.txt&lt;/code&gt;.&lt;ul&gt;
+&lt;li&gt;Quais são as feições gerais deste mapa?&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Gere outros mapas do mesmo dado usando outros métodos de interpolação.&lt;ul&gt;
+&lt;li&gt;Como diferem os mapas gerados com diferentes métodos?&lt;/li&gt;
+&lt;li&gt;Onde estão as maiores diferenças?&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Dica&lt;/em&gt;: Mostre a localização dos pontos originais nos mapas (os pontos
+  aleatórios do arquivo &lt;code&gt;random-grid.txt&lt;/code&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Gere outro mapa utilizando um valor grande (e.g., 1000 ou 1500) para o
+   espaçamento do &lt;em&gt;grid&lt;/em&gt;.&lt;ul&gt;
+&lt;li&gt;Qual mapa representa melhor "a realidade" (os dados)?
+  O mapa com espaçamento pequeno (100, 200, ou 500)
+  ou o mapa com espaçamento grande?&lt;/li&gt;
+&lt;li&gt;Como a escolha do espaçamento do  &lt;em&gt;grid&lt;/em&gt; e método de interpolação
+  influenciam a interpretação dos mapas?&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Gere um mapa do arquivo &lt;code&gt;regular-grid.txt&lt;/code&gt;. Estes são os dados originais
+   utilizados para gerar o &lt;code&gt;random-grid.txt&lt;/code&gt;.&lt;ul&gt;
+&lt;li&gt;Qual é a diferença entre os dados originais e os dados interpolados a
+  partir de &lt;code&gt;random-grid.txt&lt;/code&gt;?&lt;/li&gt;
+&lt;li&gt;Algum dos métodos de interpolação é capaz de representar perfeitamente os
+  dados originais?&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Faça um mapa da gravidade mundial &lt;code&gt;eigen-6c3sat-0_5-mundo.gdf&lt;/code&gt;.&lt;ul&gt;
+&lt;li&gt;Qual é a feição mais marcante deste mapa?&lt;/li&gt;
+&lt;li&gt;O que causa essa feição?&lt;/li&gt;
+&lt;li&gt;Como a escala de cor influencia na percepção do mapa?&lt;/li&gt;
+&lt;li&gt;Como é a gravidade sobre as grandes montanhas (Himalaias e Andes)?&lt;/li&gt;
+&lt;li&gt;Por que ela é assim?&lt;/li&gt;
+&lt;li&gt;Como poderíamos realçar, ou focar, nas partes da gravidade que são
+  causadas por feições geológicas desconhecidas? Em outras palavras, como
+  isolar as partes da gravidade que são anômalas?&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Extra&lt;/strong&gt;: Faça um mapa da topografia mundial &lt;code&gt;etopo1-0_5-mundo.gdf&lt;/code&gt;.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3&gt;Mapas&lt;/h3&gt;
+&lt;p&gt;O arquivo
+&lt;a href="http://nbviewer.ipython.org/github/leouieda/geofisica1/blob/master/lessons/gravimetria/pratica1.ipynb"&gt;lessons/gravimetria/pratica1.ipynb&lt;/a&gt;
+no &lt;a href="https://github.com/leouieda/geofisica1"&gt;repositório da disciplina no Github&lt;/a&gt;
+contem os mapas das tarefas acima gerados por mim.
+Utilizem esses mapas como uma referência, ou objetivo,
+quando forem fazer o relatório.
+&lt;strong&gt;Não usem esses mapas no relatório&lt;/strong&gt;.
+Usem os mapas que vocês mesmos fizeram.&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Leonardo Uieda</dc:creator><pubDate>Tue, 16 Sep 2014 00:00:00 -0300</pubDate><guid>tag:www.leouieda.com,2014-09-16:geofisica1/lessons/gravimetria/pratica1.html</guid></item><item><title>Prática 2 - Transformada de Fourier e transformações da anomalia</title><link>http://www.leouieda.com/geofisica1/lessons/magnetometria/pratica2.html</link><description>&lt;h3&gt;Objetivos&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Visualizar os efeitos e resultados da Transformada de Fourier em sinais
+  simples.&lt;/li&gt;
+&lt;li&gt;Aplicar a Transformada de Fourier para calcular derivadas da anomalia
+  magnética de campo total.&lt;/li&gt;
+&lt;li&gt;Observar os efeitos do erro aleatório nas derivadas calculadas.&lt;/li&gt;
+&lt;li&gt;Aprender as utilidades e limites da continuação para cima e da redução ao
+  polo.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Instruções&lt;/h3&gt;
+&lt;p&gt;Essa prática será feita em um
+&lt;a href="http://ipython.org/notebook.html"&gt;IPython notebook&lt;/a&gt;.
+A parte específica da geofísica está implementada na biblioteca &lt;a href="http://fatiando.org"&gt;Fatiando a
+Terra&lt;/a&gt;.
+Se quiser instalar os programas necessários no próprio computador, mande um
+e-mail para a &lt;a href="https://groups.google.com/forum/#!forum/geofisica1"&gt;lista de e-mails&lt;/a&gt;
+que eu darei as instruções do que baixar e como instalar.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Baixe o notebook prática:
+   &lt;a href="https://raw.githubusercontent.com/leouieda/geofisica1/master/lessons/magnetometria/pratica2.ipynb"&gt;pratica2.ipynb&lt;/a&gt;&lt;ol&gt;
+&lt;li&gt;Clique com o botão da direita no link e selecione "Salvar link como"&lt;/li&gt;
+&lt;li&gt;Verifique se em "Tipo" está escrito "Arquivo IPYNB" e não
+   "Arquivo de texto".&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;Abra o programa &lt;code&gt;cmd.exe&lt;/code&gt; (um "terminal").&lt;/li&gt;
+&lt;li&gt;Digite: &lt;code&gt;ipython notebook&lt;/code&gt; e aperte Enter.
+   Isso deveria abrir um navegador (Chrome, Internet Explorer, Firefox) com
+   a página inicial do IPython notebook.
+   Se um navegador não abrir automaticamente, abra um e entre em
+   &lt;a href="http://127.0.0.1:8888/"&gt;http://127.0.0.1:8888/&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Navegue até onde você salvou o notebook e clique nele.&lt;/li&gt;
+&lt;li&gt;Siga as instruções no notebook. Lá você encontrar as tarefas que devem ser
+   feitas e as perguntas que devem ser discutidas sobre cada tarefa.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3&gt;Salvando as figuras&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Nas janelas interativas de modelagem: clique no ícone do disquete.&lt;/li&gt;
+&lt;li&gt;As imagens inseridas no notebook: clique com o botão da direita e selecione
+  "Salvar imagem como".&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Ver o notebook online&lt;/h3&gt;
+&lt;p&gt;Para ver o  notebook online (versão não interativa) acesse:
+&lt;a href="http://nbviewer.ipython.org/github/leouieda/geofisica1/blob/master/lessons/magnetometria/pratica2.ipynb"&gt;lessons/magnetometria/pratica2.ipynb&lt;/a&gt;&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Leonardo Uieda</dc:creator><pubDate>Tue, 16 Sep 2014 00:00:00 -0300</pubDate><guid>tag:www.leouieda.com,2014-09-16:geofisica1/lessons/magnetometria/pratica2.html</guid></item><item><title>Prática 2 - A gravidade da Terra Normal e a anomalia ar-livre</title><link>http://www.leouieda.com/geofisica1/lessons/gravimetria/pratica2.html</link><description>&lt;h3&gt;Objetivos:&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Visualizar os efeitos que a escala de cor tem na interpretação dos mapas&lt;/li&gt;
+&lt;li&gt;Aprender a calcular a gravidade da Terra Normal e a anomalias ar-livre&lt;/li&gt;
+&lt;li&gt;Gerar um mapa de anomalia ar-livre para o mundo todo&lt;/li&gt;
+&lt;li&gt;Observar e entender as causas das principais feições desta anomalia&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Dados&lt;/h3&gt;
+&lt;p&gt;Para esta prática usaremos o arquivo:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://raw.githubusercontent.com/leouieda/geofisica1/master/data/eigen-6c3stat-0_5-mundo.gdf"&gt;eigen-6c3stat-0_5-mundo.gdf&lt;/a&gt;:
+  Gravidade mundial. Arquivo ASCII com 4 colunas
+  (lon, lat, altitude, gravidade). Malha regular com espaçamento de 0.5 grau.
+  Gravidade em &lt;a href="http://en.wikipedia.org/wiki/Gal_%28unit%29"&gt;mGal&lt;/a&gt;.
+  Gravidade medida na superfície da Terra.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Os dados devem estar presentes nos computadores do laboratório.
+Estes dados podem ser baixados do
+da pasta &lt;code&gt;data&lt;/code&gt; do
+&lt;a href="https://github.com/leouieda/geofisica1"&gt;repositório da disciplina no Github&lt;/a&gt;.
+Após clicar no nome do arquivo, selecione "Raw" para baixar os dados.&lt;/p&gt;
+&lt;p&gt;Dados de gravidade foram gerados a partir de
+&lt;a href="http://en.wikipedia.org/wiki/Spherical_harmonics"&gt;modelos de harmônicos esféricos&lt;/a&gt;
+utilizando o &lt;a href="http://icgem.gfz-potsdam.de/ICGEM/potato/Service.html"&gt;serviço online da ICGEM&lt;/a&gt;.&lt;/p&gt;
+&lt;h3&gt;Tarefas e perguntas&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;Carregar os dados de gravidade mundial &lt;code&gt;eigen-6c3sat-0_5-mundo.gdf&lt;/code&gt;
+   e fazer um mapa utilizando uma escala de cor linear (ver "Dicas" abaixo).&lt;ul&gt;
+&lt;li&gt;Como a escala de cor influencia a percepção dos dados?&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Calcular a gravidade da Terra Normal (&lt;span class="math"&gt;\(\gamma\)&lt;/span&gt;) nos mesmos pontos
+   (lat, lon) em que foram medidos os dados de gravidade.
+   Utilize o elipsoide WGS84.
+   Faça um mapa com esses valores utilizando a mesma escala de cor que antes.&lt;ul&gt;
+&lt;li&gt;A gravidade da Terra Normal é como você esperava?&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Calcule a anomalia ar-livre e faça um mapa com uma escala de cor divergente.&lt;ul&gt;
+&lt;li&gt;Por que a anomalia ar-livre não é mais parecida com a topografia? Nós
+  removemos o efeito da Terra Normal e da distância então só deveria restar
+  o efeito da massa topográfica.&lt;/li&gt;
+&lt;li&gt;Por que é muito pequena no meio do Pacífico, Brasil e Austrália?&lt;/li&gt;
+&lt;li&gt;Por que é positiva e grande no Havaí?&lt;/li&gt;
+&lt;li&gt;Por que é negativa/positiva/negativa se traçarmos um perfil cortando os
+  Andes ou Himalaias?&lt;/li&gt;
+&lt;li&gt;Por que apresenta um par positivo/negativo nas trincheiras?&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3&gt;Fórmulas e valores&lt;/h3&gt;
+&lt;p&gt;Todas as fórmulas e valores foram retirados do livro de
+Hofmann-Wellenhof e Moritz (2006).&lt;/p&gt;
+&lt;p&gt;A gravidade de um elipsoide calculada na sua superfície é
+data pela equação de Somigliana de 1976,&lt;/p&gt;
+&lt;p&gt;
+&lt;div class="math"&gt;$$
+\gamma(\varphi) =
+\frac{a \gamma_a \cos^2 \varphi + b \gamma_b \sin^2\varphi}{
+      \sqrt{a^2 \cos^2 \varphi + b^2 \sin^2 \varphi}},
+$$&lt;/div&gt;
+&lt;/p&gt;
+&lt;p&gt;em que &lt;span class="math"&gt;\(\varphi\)&lt;/span&gt; é a latitude, &lt;span class="math"&gt;\(a\)&lt;/span&gt; é o eixo maior do elipsoide, &lt;span class="math"&gt;\(b\)&lt;/span&gt; é o
+eixo menor, &lt;span class="math"&gt;\(\gamma_a\)&lt;/span&gt; é a gravidade do elipsoide no equador e &lt;span class="math"&gt;\(\gamma_b\)&lt;/span&gt; é a
+gravidade no polo.&lt;/p&gt;
+&lt;p&gt;Vamos utilizar o elipsoide de referência
+&lt;a href="http://en.wikipedia.org/wiki/World_Geodetic_System"&gt;WGS84&lt;/a&gt;:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;a = 6378137 metros&lt;/li&gt;
+&lt;li&gt;b = 6356752.3142 metros&lt;/li&gt;
+&lt;li&gt;&lt;span class="math"&gt;\(\gamma_a\)&lt;/span&gt; = 9.7803253359 &lt;span class="math"&gt;\(m/s^2\)&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span class="math"&gt;\(\gamma_b\)&lt;/span&gt; = 9.8321849378 &lt;span class="math"&gt;\(m/s^2\)&lt;/span&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Para calcular o valor de &lt;span class="math"&gt;\(\gamma\)&lt;/span&gt; no mesmo em que medimos a gravidade (vamos
+chamar de ponto P)&lt;/p&gt;
+&lt;p&gt;
+&lt;div class="math"&gt;$$
+\gamma_P = \gamma - 0.3086H
+$$&lt;/div&gt;
+&lt;/p&gt;
+&lt;p&gt;em que &lt;span class="math"&gt;\(H\)&lt;/span&gt; é a altitude geométrica do ponto de observação.&lt;/p&gt;
+&lt;p&gt;A anomalia ar-livre é a diferença entre a gravidade medida em P e a gravidade
+do elipsoide calculada também em P&lt;/p&gt;
+&lt;p&gt;
+&lt;div class="math"&gt;$$
+\Delta g_{AL} = g - \gamma_P = g - (\gamma - 0.3086H) = g - \gamma + 0.3086H
+$$&lt;/div&gt;
+&lt;/p&gt;
+&lt;h3&gt;Dicas&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Entre no &lt;a href="http://peterkovesi.com/projects/colourmaps/"&gt;site do Peter Kovesi&lt;/a&gt;
+  e escolha as escalas de cor. Os arquivos disponibilizados no site devem estar
+  nos computadores do LAGEX e acessíveis pelo Oasis Montaj.
+  Se não estiverem, baixem o arquivo &lt;code&gt;Geosoft.zip&lt;/code&gt; do site.
+  Lá estarão os arquivos com as escalas de cor.&lt;/li&gt;
+&lt;li&gt;Carregue seus dados no Excel e utilize fórmulas para calcular os
+  valores das anomalias.&lt;/li&gt;
+&lt;li&gt;Cuidado com &lt;code&gt;.&lt;/code&gt; e &lt;code&gt;,&lt;/code&gt; para representar decimais. O Geosoft utiliza &lt;code&gt;.&lt;/code&gt; mas o
+  Excel em português utiliza &lt;code&gt;,&lt;/code&gt;. Utilize a função "Localizar e substituir"
+  do Bloco de Notas (&lt;strong&gt;não use o WordPad pois é muito lento&lt;/strong&gt;).&lt;/li&gt;
+&lt;li&gt;Faça todas as contas em unidades do SI (kg, m, s) e depois converta para
+  mGal. Para converter de &lt;span class="math"&gt;\(m/s^2\)&lt;/span&gt; para mGal, multiplique por 100000.&lt;/li&gt;
+&lt;li&gt;Cuidado com &lt;code&gt;sin&lt;/code&gt; e &lt;code&gt;cos&lt;/code&gt;! Geralmente essas funções querem ângulos em
+  radianos. Converta latitude de graus para radianos multiplicando por
+  &lt;span class="math"&gt;\(\pi/180\)&lt;/span&gt;.&lt;/li&gt;
+&lt;li&gt;Fórmulas no Excel devem começar com &lt;code&gt;=&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Para calcular &lt;span class="math"&gt;\(\pi\)&lt;/span&gt; no Excel, use &lt;code&gt;PI()&lt;/code&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Mapas&lt;/h3&gt;
+&lt;p&gt;O arquivo
+&lt;a href="http://nbviewer.ipython.org/github/leouieda/geofisica1/blob/master/lessons/gravimetria/pratica2.ipynb"&gt;lessons/gravimetria/pratica2.ipynb&lt;/a&gt;
+no &lt;a href="https://github.com/leouieda/geofisica1"&gt;repositório da disciplina no Github&lt;/a&gt;
+contem os mapas das tarefas acima gerados por mim.
+Utilizem esses mapas como uma referência, ou objetivo,
+quando forem fazer o relatório.
+&lt;strong&gt;Não usem esses mapas no relatório&lt;/strong&gt;.
+Usem os mapas que vocês mesmos fizeram.&lt;/p&gt;
+&lt;h3&gt;Referências&lt;/h3&gt;
+&lt;p&gt;Hofmann-Wellenhof, B., and H. Moritz (2006), Physical Geodesy, 2nd, corr. ed.
+2006 edition., Springer, Wien ; New York.&lt;/p&gt;
+&lt;script type="text/javascript"&gt;if (!document.getElementById('mathjaxscript_pelican_#%@#$@#')) {
+    var mathjaxscript = document.createElement('script');
+    mathjaxscript.id = 'mathjaxscript_pelican_#%@#$@#';
+    mathjaxscript.type = 'text/javascript';
+    mathjaxscript.src = '//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML';
+    mathjaxscript[(window.opera ? "innerHTML" : "text")] =
+        "MathJax.Hub.Config({" +
+        "    config: ['MMLorHTML.js']," +
+        "    TeX: { extensions: ['AMSmath.js','AMSsymbols.js','noErrors.js','noUndefined.js'], equationNumbers: { autoNumber: 'AMS' } }," +
+        "    jax: ['input/TeX','input/MathML','output/HTML-CSS']," +
+        "    extensions: ['tex2jax.js','mml2jax.js','MathMenu.js','MathZoom.js']," +
+        "    displayAlign: 'center'," +
+        "    displayIndent: '0em'," +
+        "    showMathMenu: true," +
+        "    tex2jax: { " +
+        "        inlineMath: [ ['\\\\(','\\\\)'] ], " +
+        "        displayMath: [ ['$$','$$'] ]," +
+        "        processEscapes: true," +
+        "        preview: 'TeX'," +
+        "    }, " +
+        "    'HTML-CSS': { " +
+        "        styles: { '.MathJax_Display, .MathJax .mo, .MathJax .mi, .MathJax .mn': {color: 'black ! important'} }" +
+        "    } " +
+        "}); ";
+    (document.body || document.getElementsByTagName('head')[0]).appendChild(mathjaxscript);
+}
+&lt;/script&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Leonardo Uieda</dc:creator><pubDate>Tue, 16 Sep 2014 00:00:00 -0300</pubDate><guid>tag:www.leouieda.com,2014-09-16:geofisica1/lessons/gravimetria/pratica2.html</guid></item><item><title>Prática 3 - Magnetização remanente</title><link>http://www.leouieda.com/geofisica1/lessons/magnetometria/pratica3.html</link><description>&lt;h3&gt;Objetivos&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Visualizar os efeitos da magnetização remanente na anomalia magnética de
+  campo total.&lt;/li&gt;
+&lt;li&gt;Analisar o comportamento da derivada total e da redução ao polo na presença
+  de magnetização remanente.&lt;/li&gt;
+&lt;li&gt;Utilizar a redução ao polo como meio de verificar se há magnetização
+  remanente (e possivelmente estimar sua direção).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Instruções&lt;/h3&gt;
+&lt;p&gt;Essa prática será feita em um
+&lt;a href="http://ipython.org/notebook.html"&gt;IPython notebook&lt;/a&gt;.
+A parte específica da geofísica está implementada na biblioteca &lt;a href="http://fatiando.org"&gt;Fatiando a
+Terra&lt;/a&gt;.
+Se quiser instalar os programas necessários no próprio computador, mande um
+e-mail para a &lt;a href="https://groups.google.com/forum/#!forum/geofisica1"&gt;lista de e-mails&lt;/a&gt;
+que eu darei as instruções do que baixar e como instalar.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Baixe o notebook prática:
+   &lt;a href="https://raw.githubusercontent.com/leouieda/geofisica1/master/lessons/magnetometria/pratica3.ipynb"&gt;pratica3.ipynb&lt;/a&gt;&lt;ol&gt;
+&lt;li&gt;Clique com o botão da direita no link e selecione "Salvar link como"&lt;/li&gt;
+&lt;li&gt;Verifique se em "Tipo" está escrito "Arquivo IPYNB" e não
+   "Arquivo de texto".&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;Abra o programa &lt;code&gt;cmd.exe&lt;/code&gt; (um "terminal").&lt;/li&gt;
+&lt;li&gt;Digite: &lt;code&gt;ipython notebook&lt;/code&gt; e aperte Enter.
+   Isso deveria abrir um navegador (Chrome, Internet Explorer, Firefox) com
+   a página inicial do IPython notebook.
+   Se um navegador não abrir automaticamente, abra um e entre em
+   &lt;a href="http://127.0.0.1:8888/"&gt;http://127.0.0.1:8888/&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Navegue até onde você salvou o notebook e clique nele.&lt;/li&gt;
+&lt;li&gt;Siga as instruções no notebook. Lá você encontrar as tarefas que devem ser
+   feitas e as perguntas que devem ser discutidas sobre cada tarefa.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3&gt;Salvando as figuras&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Nas janelas interativas de modelagem: clique no ícone do disquete.&lt;/li&gt;
+&lt;li&gt;As imagens inseridas no notebook: clique com o botão da direita e selecione
+  "Salvar imagem como".&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Ver o notebook online&lt;/h3&gt;
+&lt;p&gt;Para ver o  notebook online (versão não interativa) acesse:
+&lt;a href="http://nbviewer.ipython.org/github/leouieda/geofisica1/blob/master/lessons/magnetometria/pratica3.ipynb"&gt;lessons/magnetometria/pratica3.ipynb&lt;/a&gt;&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Leonardo Uieda</dc:creator><pubDate>Tue, 16 Sep 2014 00:00:00 -0300</pubDate><guid>tag:www.leouieda.com,2014-09-16:geofisica1/lessons/magnetometria/pratica3.html</guid></item><item><title>Prática 4 - Deconvolução de Euler</title><link>http://www.leouieda.com/geofisica1/lessons/magnetometria/pratica4.html</link><description>&lt;h3&gt;Objetivos&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Explorar as soluções obtidas com a Deconvolução de Euler.&lt;/li&gt;
+&lt;li&gt;Analisar os efeitos do ruído aleatório nas soluções obtidas.&lt;/li&gt;
+&lt;li&gt;Adquirir a intuição da sensibilidade da Deconvolução aos parâmetros que a
+  controlam.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Instruções&lt;/h3&gt;
+&lt;p&gt;Essa prática será feita em um
+&lt;a href="http://ipython.org/notebook.html"&gt;IPython notebook&lt;/a&gt;.
+A parte específica da geofísica está implementada na biblioteca &lt;a href="http://fatiando.org"&gt;Fatiando a
+Terra&lt;/a&gt;.
+Se quiser instalar os programas necessários no próprio computador, mande um
+e-mail para a &lt;a href="https://groups.google.com/forum/#!forum/geofisica1"&gt;lista de e-mails&lt;/a&gt;
+que eu darei as instruções do que baixar e como instalar.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Baixe o notebook prática:
+   &lt;a href="https://raw.githubusercontent.com/leouieda/geofisica1/master/lessons/magnetometria/pratica4.ipynb"&gt;pratica4.ipynb&lt;/a&gt;&lt;ol&gt;
+&lt;li&gt;Clique com o botão da direita no link e selecione "Salvar link como"&lt;/li&gt;
+&lt;li&gt;Verifique se em "Tipo" está escrito "Arquivo IPYNB" e não
+   "Arquivo de texto".&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;Abra o programa &lt;code&gt;cmd.exe&lt;/code&gt; (um "terminal").&lt;/li&gt;
+&lt;li&gt;Digite: &lt;code&gt;ipython notebook&lt;/code&gt; e aperte Enter.
+   Isso deveria abrir um navegador (Chrome, Internet Explorer, Firefox) com
+   a página inicial do IPython notebook.
+   Se um navegador não abrir automaticamente, abra um e entre em
+   &lt;a href="http://127.0.0.1:8888/"&gt;http://127.0.0.1:8888/&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Navegue até onde você salvou o notebook e clique nele.&lt;/li&gt;
+&lt;li&gt;Siga as instruções no notebook. Lá você encontrar as tarefas que devem ser
+   feitas e as perguntas que devem ser discutidas sobre cada tarefa.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3&gt;Salvando as figuras&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Nas janelas interativas de modelagem: clique no ícone do disquete.&lt;/li&gt;
+&lt;li&gt;As imagens inseridas no notebook: clique com o botão da direita e selecione
+  "Salvar imagem como".&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Ver o notebook online&lt;/h3&gt;
+&lt;p&gt;Para ver o  notebook online (versão não interativa) acesse:
+&lt;a href="http://nbviewer.ipython.org/github/leouieda/geofisica1/blob/master/lessons/magnetometria/pratica4.ipynb"&gt;lessons/magnetometria/pratica4.ipynb&lt;/a&gt;&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Leonardo Uieda</dc:creator><pubDate>Tue, 16 Sep 2014 00:00:00 -0300</pubDate><guid>tag:www.leouieda.com,2014-09-16:geofisica1/lessons/magnetometria/pratica4.html</guid></item><item><title>Prática 5 - Modelagem direta 2D para testar hipóteses</title><link>http://www.leouieda.com/geofisica1/lessons/gravimetria/pratica5.html</link><description>&lt;h3&gt;Objetivos&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Entender o que é e qual é o objetivo da modelagem direta.&lt;/li&gt;
+&lt;li&gt;Aprender como testar uma hipótese geológica com dados geofísicos.&lt;/li&gt;
+&lt;li&gt;Ilustrar a importância de testes com dados sintéticos.&lt;/li&gt;
+&lt;li&gt;Aprender na prática o significado de falta de unicidade.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Instruções&lt;/h3&gt;
+&lt;p&gt;Essa prática será feita em um
+&lt;a href="http://ipython.org/notebook.html"&gt;IPython notebook&lt;/a&gt;.
+Os notebooks são documentos interativos que nos permitem misturar texto, código
+(na linguagem Python), imagens, gráficos, vídeos, Google maps, etc.
+A imagem abaixo mostra um screenshot do notebook que será usado nesta prática.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Screenshot da prática 5" src="http://www.leouieda.com/geofisica1/images/pratica5-screeshot-notebook.png" style="width: 1366px; height: auto;"/&gt;&lt;/p&gt;
+&lt;p&gt;As soluções das práticas anteriores
+(&lt;a href="http://nbviewer.ipython.org/github/leouieda/geofisica1/blob/master/lessons/gravimetria/pratica4.ipynb"&gt;exemplo&lt;/a&gt;)
+foram feitas em IPython notebooks.
+As solução não eram interativas pois eram somente visualizações dos notebooks
+na internet.&lt;/p&gt;
+&lt;p&gt;A parte específica da geofísica está implementada na biblioteca &lt;a href="http://fatiando.org"&gt;Fatiando a
+Terra&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Para interagir (rodar) os notebooks, precisamos rodar o IPython em nossos
+computadores.
+Os computadores do laboratório devem ter o IPython e todos os outros requisitos
+instalados.
+Se quiser instalar os programas necessários no próprio computador, mande um
+e-mail para a &lt;a href="https://groups.google.com/forum/#!forum/geofisica1"&gt;lista de e-mails&lt;/a&gt;
+que eu darei as instruções do que baixar e como instalar.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Baixe o notebook prática 5:
+   &lt;a href="https://raw.githubusercontent.com/leouieda/geofisica1/master/lessons/gravimetria/pratica5.ipynb"&gt;pratica5.ipynb&lt;/a&gt;&lt;ol&gt;
+&lt;li&gt;Clique com o botão da direita no link e selecione "Salvar link como"&lt;/li&gt;
+&lt;li&gt;Verifique se em "Tipo" está escrito "Arquivo IPYNB" e não
+   "Arquivo de texto".&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;Abra o programa &lt;code&gt;cmd.exe&lt;/code&gt; (um "terminal").&lt;/li&gt;
+&lt;li&gt;Digite: &lt;code&gt;ipython notebook&lt;/code&gt; e aperte Enter.
+   Isso deveria abrir um navegador (Chrome, Internet Explorer, Firefox) com
+   um página semelhante a abaixo.
+   Se um navegador não abrir automaticamente, abra um e entre em
+   &lt;a href="http://127.0.0.1:8888/"&gt;http://127.0.0.1:8888/&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Navegue até onde você salvou o notebook e clique nele.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img alt="Screenshot da notebook dashboard" src="http://www.leouieda.com/geofisica1/images/pratica5-screeshot-dashboard.png" style="width: 1366px; height: auto;"/&gt;&lt;/p&gt;
+&lt;h3&gt;Tarefas e perguntas&lt;/h3&gt;
+&lt;p&gt;Siga as instruções no notebook. Lá você encontrar as tarefas que devem ser
+feitas e as perguntas que devem ser discutidas sobre cada tarefa.&lt;/p&gt;
+&lt;h3&gt;Salvando as figuras&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Nas janelas interativas de modelagem: clique no ícone do disquete.&lt;/li&gt;
+&lt;li&gt;As imagens inseridas no notebook: clique com o botão da direita e selecione
+  "Salvar imagem como".&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Ver o notebook online&lt;/h3&gt;
+&lt;p&gt;Para ver o  notebook online (versão não-interativa) acesse:
+&lt;a href="http://nbviewer.ipython.org/github/leouieda/geofisica1/blob/master/lessons/gravimetria/pratica5.ipynb"&gt;lessons/gravimetria/pratica5.ipynb&lt;/a&gt;&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Leonardo Uieda</dc:creator><pubDate>Tue, 16 Sep 2014 00:00:00 -0300</pubDate><guid>tag:www.leouieda.com,2014-09-16:geofisica1/lessons/gravimetria/pratica5.html</guid></item><item><title>Prática 6 - Inversão para estimar o embasamento de uma bacia sedimentar</title><link>http://www.leouieda.com/geofisica1/lessons/gravimetria/pratica6.html</link><description>&lt;h3&gt;Objetivos&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Entender o que é inversão e o conceito de estabilidade.&lt;/li&gt;
+&lt;li&gt;Aprender como os vínculos utilizados influenciam os resultados.&lt;/li&gt;
+&lt;li&gt;Entender como escolher um valor apropriado para o parâmetro de regularização.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Instruções&lt;/h3&gt;
+&lt;p&gt;Essa prática será feita em um
+&lt;a href="http://ipython.org/notebook.html"&gt;IPython notebook&lt;/a&gt;.
+A parte específica da geofísica está implementada na biblioteca &lt;a href="http://fatiando.org"&gt;Fatiando a
+Terra&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Para interagir (rodar) os notebooks, precisamos rodar o IPython em nossos
+computadores.
+Os computadores do laboratório devem ter o IPython e todos os outros requisitos
+instalados.
+Se quiser instalar os programas necessários no próprio computador, mande um
+e-mail para a &lt;a href="https://groups.google.com/forum/#!forum/geofisica1"&gt;lista de e-mails&lt;/a&gt;
+que eu darei as instruções do que baixar e como instalar.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Baixe o notebook prática:
+   &lt;a href="https://raw.githubusercontent.com/leouieda/geofisica1/master/lessons/gravimetria/pratica6.ipynb"&gt;pratica6.ipynb&lt;/a&gt;&lt;ol&gt;
+&lt;li&gt;Clique com o botão da direita no link e selecione "Salvar link como"&lt;/li&gt;
+&lt;li&gt;Verifique se em "Tipo" está escrito "Arquivo IPYNB" e não
+   "Arquivo de texto".&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;Abra o programa &lt;code&gt;cmd.exe&lt;/code&gt; (um "terminal").&lt;/li&gt;
+&lt;li&gt;Digite: &lt;code&gt;ipython notebook&lt;/code&gt; e aperte Enter.
+   Isso deveria abrir um navegador (Chrome, Internet Explorer, Firefox) com
+   a página inicial do IPython notebook.
+   Se um navegador não abrir automaticamente, abra um e entre em
+   &lt;a href="http://127.0.0.1:8888/"&gt;http://127.0.0.1:8888/&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Navegue até onde você salvou o notebook e clique nele.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3&gt;Tarefas e perguntas&lt;/h3&gt;
+&lt;p&gt;Siga as instruções no notebook. Lá você encontrar as tarefas que devem ser
+feitas e as perguntas que devem ser discutidas sobre cada tarefa.&lt;/p&gt;
+&lt;h3&gt;Salvando as figuras&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Nas janelas interativas de modelagem: clique no ícone do disquete.&lt;/li&gt;
+&lt;li&gt;As imagens inseridas no notebook: clique com o botão da direita e selecione
+  "Salvar imagem como".&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Ver o notebook online&lt;/h3&gt;
+&lt;p&gt;Para ver o  notebook online (versão não interativa) acesse:
+&lt;a href="http://nbviewer.ipython.org/github/leouieda/geofisica1/blob/master/lessons/gravimetria/pratica6.ipynb"&gt;lessons/gravimetria/pratica6.ipynb&lt;/a&gt;&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Leonardo Uieda</dc:creator><pubDate>Tue, 16 Sep 2014 00:00:00 -0300</pubDate><guid>tag:www.leouieda.com,2014-09-16:geofisica1/lessons/gravimetria/pratica6.html</guid></item></channel></rss>
