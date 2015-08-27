@@ -108,7 +108,7 @@ Society of Exploration Geophysicists.
 Esse cronograma ainda não é definitivo. Provavelmente sofrerá alterações ao
 longo do semestre.
 
-| Aula | Data | Tema                                 | Prática   |
+| Semana | Data | Tema                                 | Prática   |
 |:----:|:---------------|:-------------------------------------|:----------:|
 | 1    | 27 e 31/8  | Apresentação do curso e introdução a geofísica  |   |
 | 2    |  | A gravidade da Terra, grids, interpolação e mapas  |    |
