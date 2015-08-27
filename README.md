@@ -1,63 +1,150 @@
 # Geofísica 1 - Gravimetria e magnetometria
 
-http://leouieda.com/geofisica1
+Disciplina da graduação em Geologia da UERJ.
 
-Material para o curso "Geofísica 1" da graduação em Geologia da
-[Universidade do Estado do Rio de Janeiro](http://www.uerj.br/).
+**Aulas:**
 
-Este repositório contem as fontes para compilar o site,
-lições teóricas,
-instruções para as atividades práticas,
-dados e [IPython notebooks](http://ipython.org/notebook.html) para as práticas.
+* Prática: Segunda 10:40 - 12:20 (T1) e Quinta 15:10 - 17:00 (T2)
+* Teórica: Terça 13:20 - 15:10 (T1 e T)
 
-## Compilar o site
+**Professor:** [Leonardo Uieda](http://www.leouieda.com/) - Sala 2019A
 
-O site é gerado pelo sistema [Pelican](http://docs.getpelican.com/).
+**Atendimento:** Segunda 13:30 - 14:30
 
-Requisitos para compilação:
+**Lista de e-mail:** Os alunos devem se cadastrar na lista de e-mail do curso.
+Use o link abaixo para cadastrar seu e-mail:
 
-* Pelican (3.4.0)
-* markdown (2.4)
-* pillow
-* beautifulsoup4
-* nodejs
+http://goo.gl/forms/xsRt2K2jqW
 
-Para instalar as componentes em Python (todos menos nodejs):
+**TODOS OS COMUNICADOS SERÃO FEITOS ATRAVÉS DA LISTA DE E-MAIL.**
 
-    pip install pelican==3.4.0 markdown==2.4 pillow beautifulsoup4
+[![http://www.phdcomics.com/comics.php?f=1790](https://raw.githubusercontent.com/leouieda/matematica-especial/master/images/phd032515s.jpg)](http://www.phdcomics.com/comics.php?f=1790)
 
-Para instalar nodejs no Ubuntu:
 
-    sudo apt-get install nodejs
+## Ementa
 
-Entre no repositório e use o `Makefile` para compilar o HTML do site:
 
-    cd geofisica1
-    make
-    make serve
 
-O comando `make serve` iniciará um servidor na pasta `output` onde estão os
-arquivos HTML gerados.
-Abra um navegador e vá para `http://127.0.0.1:8003` para visualizar o site.
-Use Ctrl+C para interromper o servidor.
+## Aulas
 
-## Atualização automática usando TravisCI
+As aulas teóricas servirão para introduzir o conceito que será abordado na
+respectiva semana durante as práticas.
+Nas aulas práticas, os alunos receberão um questionário (entre 4-6 questões)
+sobre o tema da semana. 
+As respostas envolverão exercícios realizados nos computadores do laboratório.
+Os exercício serão feitos em [Jupyter notebooks](http://jupyter.org/)
+utilizando o software livre [Fatiando a Terra](http://www.fatiando.org/).
 
-Este site é compilado automaticamente quando um novo *commit* é empurrado para
-o *master*.
-Veja os arquivos `.travis.yml` e `.update-website.sh`.
-Inspirado nas mágicas por
-[Sleepy Coders](http://sleepycoders.blogspot.com.au/2013/03/sharing-travis-ci-generated-files.html)
-e
-[Mathieu Leplatre](http://blog.mathieu-leplatre.info/publish-your-pelican-blog-on-github-pages-via-travis-ci.html).
+Eu encorajo fortemente que vocês **perguntem e discutam** durante as aulas. Não
+deixe uma dúvida para depois. Minha política é que não existem perguntas
+"bestas", "irrelevantes", "óbvias". Não tolero comportamento ofensivo e a
+ridicularização dos colegas.
 
-[![TravisCI status](http://img.shields.io/travis/leouieda/geofisica1.svg?style=flat)](https://travis-ci.org/leouieda/geofisica1)
+Textos, códigos, slides, etc estarão disponíveis no site da disciplina.
+
+## Avaliação
+
+Teremos duas fontes de nota:
+
+1. Média das notas das atividades práticas (70% da nota)
+2. Projeto realizado ao longo do curso (30% da nota)
+
+As partes práticas das aulas serão baseadas no tema da semana.  Os alunos
+receberão instruções para realizar a prática referente ao tema e deverão
+entregar a solução ao final da aula (um por grupo).  A média das práticas será
+feita com base nas notas de cada prática (uma por tema).  Para não prejudicar
+alunos que faltarem eventualmente, vou descartar as duas menores notas.
+
+Os projetos serão feitos em grupo, com um tema diferente para cada grupo (a
+definir). O projeto será desenvolvido ao longo do semestre.
+
+## Conduta
+
+### Assiduidade
+
+Será cobrada presença em sala de aula através assinatura de lista de presença.
+Alunos que faltarem a uma aula receberão zero na atividade prática daquela
+aula.  O limite de faltas em hora aula é de 18h (~3 aulas).
+
+### Plágio
+
+**Cuidado com cópias e plágio.** Trabalhos que forem cópias integral ou parcial
+do trabalho de colegas ou de outras fontes receberão nota **zero**. Citem todas
+suas fontes de informação (mesmo que seja a Wikipedia).
+
+## Bibliografia
+
+[Software Carpentry v5.3: Version control with
+git](http://swcarpentry.github.io/git-novice/)
+
+[Software Carpentry v5.3: The Unix
+Shell](http://swcarpentry.github.io/shell-novice/)
+
+[Software Carpentry v5.3: Programming with
+Python](http://swcarpentry.github.io/python-novice-inflammation/)
+
+[Software Carpentry v4:
+Python](http://software-carpentry.org/v4/python/index.html)
+
+Python Scientific Lecture Notes.
+[http://scipy-lectures.github.io/](http://scipy-lectures.github.io/)
+
+Pilgrim, M. (2004), Dive Into Python, Apress, Berkeley, CA : New York.
+[[disponível online](http://www.diveintopython.net/)]
+
+Numerical Methods, Wikibooks,
+[https://en.wikibooks.org/wiki/Numerical_Methods](https://en.wikibooks.org/wiki/Numerical_Methods)
+
+Press, W. H., Teukolsky, S. A, Vetterling, W. T. e Flannery, B. P. Numerical
+recipes in C: The art of scientific computing, second edition, Cambridge
+University Press, 1992
+
+
+Como em tudo na vida, o [Google é seu melhor amigo](http://bfy.tw/1UCK).
+Há uma vastidão de recursos online sobre programação em Python. A maioria está
+em **inglês** então busquem com palavras chave nessa língua. Exemplos:
+"scientific python", "python programming".
+
+Vocês vão se deparar diversas vezes com o site
+[StackOverflow](http://stackoverflow.com/) de perguntas e respostas. Esse site
+é um dos melhores e mais utilizados recursos para programação. As repostas são
+quase sempre de qualidade.
+
+
+## Software
+
+Em breve.
+
+## Projeto
+
+Em breve.
+
+## Cronograma
+
+Esse cronograma ainda não é definitivo. Provavelmente sofrerá alterações ao
+longo do semestre.
+
+| Aula | Data (T1 - T2) | Tema                                 | Prática   |
+|:----:|:---------------|:-------------------------------------|:----------|
+| 1    | 26-27/08 - 28/08 | Apresentação e introdução a algoritmos e logica de programação  | [sort](https://github.com/leouieda/matematica-especial/blob/master/praticas/sort.md)   |
+| 2    | 02-03/09 - 04/09 | Unix shell (básico) e Controle de versão com git   |    |
+| 3    | 09-10/09 - 11/09 | Python: variáveis, loops e condições           |    |
+| 4    | 17-16/09 - 18/09 | Python: estruturação de um programa e funções |    |
+| 5    | 23-24/09 - 25/09 | Python: arrays, numpy e gráficos simples |    |
+| 6    | 30-01/10 - 02/10 | Introdução a métodos numéricos. Integração  |    |
+| 7    | 07-08/10 - 09/10 | Solução de sistemas lineares |    |
+| 8    |  | Método dos mínimos quadrados e Interpolação |    |
+| 9    |  | Transformada de Fourier: parte 1 |    |
+| 10   |  | Transformada de Fourier: parte 2 |    |
+| 11   |  | Solução de equações diferenciais parciais: método das diferenças finitas |    |
+| 12   |  | Solução numérica da equação de difusão |    |
+| 13   |  | Solução numérica da equação da onda  |    |
+| 14   |  | Triângulos esféricos e representação de dados em mapas |    |
+| 15   |  | Apresentação dos projetos |    |
+
 
 ## License
 
-[![Creative Commons
-License](https://i.creativecommons.org/l/by/4.0/88x31.png)](http://creativecommons.org/licenses/by/4.0/)
-This work is licensed under a
-[Creative Commons Attribution 4.0 International
-License](http://creativecommons.org/licenses/by/4.0/).
-
+<a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br /><span xmlns:dct="http://purl.org/dc/terms/" href="http://purl.org/dc/dcmitype/Text" property="dct:title" rel="dct:type">"Material didático da disciplina Geofísica 1"</span>
+by <a xmlns:cc="http://creativecommons.org/ns#" href="http://www.leouieda.com/" property="cc:attributionName" rel="cc:attributionURL">Leonardo Uieda</a> is licensed under a
+<a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.
