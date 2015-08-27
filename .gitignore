@@ -1,6 +1,5 @@
-output
-cache
 *.swp
 *.pyc
+*~
 .ipynb_checkpoints
 notebooks/modelo*

@@ -1,4 +1,4 @@
-# Geofísica 1 - Gravimetria e magnetometria
+# Geofísica 1 - Gravimetria e magnetometria (FGEL 04-12421)
 
 Disciplina da graduação em Geologia da UERJ.
 
@@ -23,19 +23,29 @@ http://goo.gl/forms/xsRt2K2jqW
 
 ## Ementa
 
+Comportamento radiométrico de rochas e sua importância no mapeamento geológico
+e prospecção mineral. Radiação.  Levantamentos radiométricos, gamaespectometro.
+Método gravimétrico: Lei da atração gravitacional,  densidade de minerais e
+rochas, gravimetro, reduções aplicadas aos dados. Método magnetométrico:
+magnetismo de minerais e rochas, fontes do campo magnético, o IGRF, reduções
+aplicadas aos dados, campo magnético produzido por corpos de forma geométrica
+simples e seus equivalentes geológicos; transformações do campo de anomalias:
+continuação, derivadas, redução ao pólo. Interpretação das anomalias: problema
+direto; problema inverso e a não unicidade da solução.
 
+Versão oficial no ementário da UERJ:
+http://www.ementario.uerj.br/ementas/12421.pdf
 
 ## Aulas
 
 As aulas teóricas servirão para introduzir o conceito que será abordado na
-respectiva semana durante as práticas.
-Nas aulas práticas, os alunos receberão um questionário (entre 4-6 questões)
-sobre o tema da semana. 
-As respostas envolverão exercícios realizados nos computadores do laboratório.
-Os exercício serão feitos em [Jupyter notebooks](http://jupyter.org/)
-utilizando o software livre [Fatiando a Terra](http://www.fatiando.org/).
+respectiva semana durante as práticas.  Nas aulas práticas, os alunos receberão
+um questionário (entre 4-6 questões) sobre o tema da semana.  As respostas
+envolverão exercícios realizados nos computadores do laboratório.  Os
+exercícios serão feitos em [Jupyter notebooks](http://jupyter.org/) utilizando
+o software livre [Fatiando a Terra](http://www.fatiando.org/).
 
-Eu encorajo fortemente que vocês **perguntem e discutam** durante as aulas. Não
+Eu encorajo que vocês **perguntem e discutam** durante as aulas. Não
 deixe uma dúvida para depois. Minha política é que não existem perguntas
 "bestas", "irrelevantes", "óbvias". Não tolero comportamento ofensivo e a
 ridicularização dos colegas.
@@ -44,19 +54,12 @@ Textos, códigos, slides, etc estarão disponíveis no site da disciplina.
 
 ## Avaliação
 
-Teremos duas fontes de nota:
-
-1. Média das notas das atividades práticas (70% da nota)
-2. Projeto realizado ao longo do curso (30% da nota)
-
-As partes práticas das aulas serão baseadas no tema da semana.  Os alunos
-receberão instruções para realizar a prática referente ao tema e deverão
-entregar a solução ao final da aula (um por grupo).  A média das práticas será
-feita com base nas notas de cada prática (uma por tema).  Para não prejudicar
-alunos que faltarem eventualmente, vou descartar as duas menores notas.
-
-Os projetos serão feitos em grupo, com um tema diferente para cada grupo (a
-definir). O projeto será desenvolvido ao longo do semestre.
+A **média final** será a média das notas dos questionários realizados nas
+atividades práticas. Teremos 10-12 questionários.  Alunos que **não
+comparecerem** à aula prática não poderão entregar o respectivo questionário.
+Consequentemente, receberão **nota zero** naquele questionário.  Para não
+prejudicar alunos que faltarem eventualmente, não incluirei a menor nota dos
+questionários na média.
 
 ## Conduta
 
@@ -64,83 +67,56 @@ definir). O projeto será desenvolvido ao longo do semestre.
 
 Será cobrada presença em sala de aula através assinatura de lista de presença.
 Alunos que faltarem a uma aula receberão zero na atividade prática daquela
-aula.  O limite de faltas em hora aula é de 18h (~3 aulas).
+aula.  O limite de faltas em hora aula é de 15h (~7 aulas).
+**Lembrem-se que as aulas práticas valem nota! Não faltem a toa.**
 
 ### Plágio
 
 **Cuidado com cópias e plágio.** Trabalhos que forem cópias integral ou parcial
-do trabalho de colegas ou de outras fontes receberão nota **zero**. Citem todas
-suas fontes de informação (mesmo que seja a Wikipedia).
+do trabalho de colegas ou de outras fontes receberão nota **zero**. Discussão
+entre alunos é encorajada, porém escrevam as respostas com suas próprias
+palavras.
 
 ## Bibliografia
 
-[Software Carpentry v5.3: Version control with
-git](http://swcarpentry.github.io/git-novice/)
+Blakely, R. J. (1996), Potential Theory in Gravity and Magnetic Applications,
+Cambridge University Press.
 
-[Software Carpentry v5.3: The Unix
-Shell](http://swcarpentry.github.io/shell-novice/)
+Fowler, C. M. R. (2004), The Solid Earth: An Introduction to Global Geophysics,
+2 edition., Cambridge University Press, Cambridge, UK ; New York.
 
-[Software Carpentry v5.3: Programming with
-Python](http://swcarpentry.github.io/python-novice-inflammation/)
+Li, X., and H. Götze (2001), Ellipsoid, geoid, gravity, geodesy, and
+geophysics, GEOPHYSICS, 66(6), 1660–1668, doi:10.1190/1.1487109.
 
-[Software Carpentry v4:
-Python](http://software-carpentry.org/v4/python/index.html)
+Reid, A. (2010), Forgotten truths, myths and sacred cows of Potential Fields
+Geophysics, in SEG Technical Program Expanded Abstracts 2010, pp. 1198–1201,
+Society of Exploration Geophysicists.
 
-Python Scientific Lecture Notes.
-[http://scipy-lectures.github.io/](http://scipy-lectures.github.io/)
-
-Pilgrim, M. (2004), Dive Into Python, Apress, Berkeley, CA : New York.
-[[disponível online](http://www.diveintopython.net/)]
-
-Numerical Methods, Wikibooks,
-[https://en.wikibooks.org/wiki/Numerical_Methods](https://en.wikibooks.org/wiki/Numerical_Methods)
-
-Press, W. H., Teukolsky, S. A, Vetterling, W. T. e Flannery, B. P. Numerical
-recipes in C: The art of scientific computing, second edition, Cambridge
-University Press, 1992
+Reid, A. (2012), Forgotten truths, myths and sacred cows of Potential Fields
+Geophysics - II, in SEG Technical Program Expanded Abstracts 2012, pp. 1–3,
+Society of Exploration Geophysicists.
 
 
-Como em tudo na vida, o [Google é seu melhor amigo](http://bfy.tw/1UCK).
-Há uma vastidão de recursos online sobre programação em Python. A maioria está
-em **inglês** então busquem com palavras chave nessa língua. Exemplos:
-"scientific python", "python programming".
-
-Vocês vão se deparar diversas vezes com o site
-[StackOverflow](http://stackoverflow.com/) de perguntas e respostas. Esse site
-é um dos melhores e mais utilizados recursos para programação. As repostas são
-quase sempre de qualidade.
-
-
-## Software
-
-Em breve.
-
-## Projeto
-
-Em breve.
+**Se não tiverem acesso a essas referências, entrem em contato comigo.**
 
 ## Cronograma
 
 Esse cronograma ainda não é definitivo. Provavelmente sofrerá alterações ao
 longo do semestre.
 
-| Aula | Data (T1 - T2) | Tema                                 | Prática   |
-|:----:|:---------------|:-------------------------------------|:----------|
-| 1    | 26-27/08 - 28/08 | Apresentação e introdução a algoritmos e logica de programação  | [sort](https://github.com/leouieda/matematica-especial/blob/master/praticas/sort.md)   |
-| 2    | 02-03/09 - 04/09 | Unix shell (básico) e Controle de versão com git   |    |
-| 3    | 09-10/09 - 11/09 | Python: variáveis, loops e condições           |    |
-| 4    | 17-16/09 - 18/09 | Python: estruturação de um programa e funções |    |
-| 5    | 23-24/09 - 25/09 | Python: arrays, numpy e gráficos simples |    |
-| 6    | 30-01/10 - 02/10 | Introdução a métodos numéricos. Integração  |    |
-| 7    | 07-08/10 - 09/10 | Solução de sistemas lineares |    |
-| 8    |  | Método dos mínimos quadrados e Interpolação |    |
-| 9    |  | Transformada de Fourier: parte 1 |    |
-| 10   |  | Transformada de Fourier: parte 2 |    |
-| 11   |  | Solução de equações diferenciais parciais: método das diferenças finitas |    |
-| 12   |  | Solução numérica da equação de difusão |    |
-| 13   |  | Solução numérica da equação da onda  |    |
-| 14   |  | Triângulos esféricos e representação de dados em mapas |    |
-| 15   |  | Apresentação dos projetos |    |
+| Aula | Data | Tema                                 | Prática   |
+|:----:|:---------------|:-------------------------------------|:----------:|
+| 1    | 27 e 31/8  | Apresentação do curso e introdução a geofísica  |   |
+| 2    |  | A gravidade da Terra, grids, interpolação e mapas  |    |
+| 3    |  | A Terra Normal e o distúrbio da gravidade |    |
+| 4    |  | O efeito da topografia e a anomalia Bouguer |    |
+| 5    |  | Anomalia da gravidade, tectônica e isostasia |    |
+| 6    |  | Modelagem direta para testar hipóteses geológicas |    |
+| 7    |  | Inversão e instabilidade |    |
+| 8    |  | O campo magnético da Terra e a anomalia magnética de campo total |    |
+| 9    |  | Transformada de Fourier e transformações de dados |    |
+| 10   |  | Magnetização induzida e remanente |    |
+| 11   |  | Deconvolução de Euler |    |
 
 
 ## License
