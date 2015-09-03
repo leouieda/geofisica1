@@ -1,6 +1,6 @@
 # Geofísica 1 - Gravimetria e magnetometria (FGEL 04-12421)
 
-![](https://raw.githubusercontent.com/leouieda/matematica-especial/master/images/bouguer-mundo.png)
+![](https://raw.githubusercontent.com/leouieda/geofisica1/master/images/bouguer-mundo.png)
 
 Disciplina da graduação em Geologia da UERJ.
 
@@ -20,7 +20,7 @@ http://goo.gl/forms/xsRt2K2jqW
 
 **TODOS OS COMUNICADOS SERÃO FEITOS ATRAVÉS DA LISTA DE E-MAIL.**
 
-[![http://www.phdcomics.com/comics.php?f=1790](https://raw.githubusercontent.com/leouieda/matematica-especial/master/images/phd032515s.jpg)](http://www.phdcomics.com/comics.php?f=1790)
+[![http://www.phdcomics.com/comics.php?f=1790](https://raw.githubusercontent.com/leouieda/geofisica1/master/images/phd032515s.jpg)](http://www.phdcomics.com/comics.php?f=1790)
 
 
 ## Ementa
