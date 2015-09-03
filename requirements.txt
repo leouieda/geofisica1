@@ -1,0 +1,9 @@
+numpy
+scipy
+imaging
+matplotlib
+basemap
+seaborn
+numba
+ipython
+jupyter
