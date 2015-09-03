@@ -2,6 +2,35 @@ from __future__ import division
 import numpy as np
     
     
+def down_sample(arrays, shape, every):
+    """
+    Down-sample data by taking every other data point.
+    
+    Parameters:
+    
+    * arrays : list of 1d-arrays
+        The data arrays to down-sample
+    * shape : tuple = (nlat, nlon)
+        The original shape of the data.
+    * every : int
+        Will take every *every* data. For example, if
+        ``every=3``, will take every 3 data points. 
+        Equivalent of doing ``[::3, ::3]`` on a numpy
+        2d-array.
+     
+    Returns:
+    
+    * array1, array2, array3, ..., shape
+        The down-sampled arrays and the new shape of the
+        data grid.
+        
+    """
+    downsampled = [array.reshape(shape)[::every, ::every]
+                   for array in arrays]
+    newshape = downsampled[0].shape
+    return [v.ravel() for v in downsampled] + [newshape]
+
+    
 def load_icgem_gdf(fname, usecols=None):
     """
     Load data from an ICGEM .gdf file.
