@@ -118,7 +118,7 @@ longo do semestre.
 |:----:|:---------------|:-------------------------------------|:----------:|
 | 1    | 27 e 31/8  | Apresentação do curso e introdução a geofísica  |   |
 | 2    | 3/9 | A gravidade da Terra, grids, interpolação e mapas  | [mapas, interpolação e gravidade](http://nbviewer.ipython.org/github/leouieda/geofisica1/blob/master/praticas/1-mapas-interpolacao-gravidade.ipynb)   |
-| 3    |  | A Terra Normal e o distúrbio da gravidade |    |
+| 3    |  | A Terra Normal e o distúrbio da gravidade | [Terra Normal e distúrbio da gravidade](http://nbviewer.ipython.org/github/leouieda/geofisica1/blob/master/praticas/2-terra-normal-e-disturbio.ipynb)   |
 | 4    |  | O efeito da topografia e a anomalia Bouguer |    |
 | 5    |  | Anomalia da gravidade, tectônica e isostasia |    |
 | 6    |  | Modelagem direta para testar hipóteses geológicas |    |
