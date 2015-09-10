@@ -94,6 +94,10 @@ Fowler, C. M. R. (2004), The Solid Earth: An Introduction to Global Geophysics,
 Li, X., and H. Götze (2001), Ellipsoid, geoid, gravity, geodesy, and
 geophysics, GEOPHYSICS, 66(6), 1660–1668, doi:10.1190/1.1487109.
 
+Hackney, R. I., and W. E. Featherstone (2003), Geodetic versus geophysical
+perspectives of the "gravity anomaly," Geophys. J. Int., 154(1), 35–43,
+doi:10.1046/j.1365-246X.2003.01941.x.
+
 Reid, A. (2010), Forgotten truths, myths and sacred cows of Potential Fields
 Geophysics, in SEG Technical Program Expanded Abstracts 2010, pp. 1198–1201,
 Society of Exploration Geophysicists.
