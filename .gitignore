@@ -3,4 +3,4 @@
 *.pyc
 *~
 .ipynb_checkpoints
-notebooks/modelo*
+praticas/modelo*
