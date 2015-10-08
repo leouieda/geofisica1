@@ -120,8 +120,8 @@ longo do semestre.
 | 2    | A gravidade da Terra, grids, interpolação e mapas  | [mapas, interpolação e gravidade](http://nbviewer.ipython.org/github/leouieda/geofisica1/blob/master/praticas/1-mapas-interpolacao-gravidade.ipynb)   |
 | 3    | A Terra Normal e o distúrbio da gravidade | [Terra Normal e distúrbio da gravidade](http://nbviewer.ipython.org/github/leouieda/geofisica1/blob/master/praticas/2-terra-normal-e-disturbio.ipynb)   |
 | 4    | Isostasia, o efeito da topografia e a anomalia Bouguer | [Isostasia e Bouguer](http://nbviewer.ipython.org/github/leouieda/geofisica1/blob/master/praticas/3-isostasia-anomalia-bouguer.ipynb)   |
-| 5    | Anomalia da gravidade, tectônica e isostasia |    |
-| 6    | Modelagem direta para testar hipóteses geológicas |    |
+| 5    | Estudos de caso (Havaí, Japão e Brasil) | [Estudos de caso](http://nbviewer.ipython.org/github/leouieda/geofisica1/blob/master/praticas/4-estudos-de-caso.ipynb)   |
+| 6    | Modelagem direta para testar hipóteses geológicas | [Modelagem direta](http://nbviewer.ipython.org/github/leouieda/geofisica1/blob/master/praticas/5-modelagem-direta.ipynb)   |
 | 7    | Inversão e instabilidade |    |
 | 8    | O campo magnético da Terra e a anomalia magnética de campo total |    |
 | 9    | Transformada de Fourier e transformações de dados |    |
