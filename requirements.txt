@@ -1,9 +1,10 @@
 numpy
 scipy
-imaging
+pillow
 matplotlib
 basemap
 seaborn
 numba
 ipython
 jupyter
+mayavi
