@@ -58,6 +58,25 @@ ridicularização dos colegas.
 
 Textos, códigos, slides, etc estarão disponíveis no site da disciplina.
 
+## Cronograma
+
+Esse cronograma ainda não é definitivo. Provavelmente sofrerá alterações ao
+longo do semestre.
+
+| Semana | Tema                                 | Prática   |
+|:------:|:-------------------------------------|:---------:|
+| 0    | Apresentação do curso e introdução a geofísica  |   |
+| 1    | A gravidade da Terra, grids, interpolação e mapas  | [mapas, interpolação e gravidade](http://nbviewer.ipython.org/github/leouieda/geofisica1/blob/master/notebooks/1-mapas-interpolacao-gravidade.ipynb) |
+| 2    | A Terra Normal e o distúrbio da gravidade | [Terra Normal e distúrbio da gravidade](http://nbviewer.ipython.org/github/leouieda/geofisica1/blob/master/notebooks/2-terra-normal-e-disturbio.ipynb) |
+| 3    | Isostasia, o efeito da topografia e a anomalia Bouguer | [Isostasia e Bouguer](http://nbviewer.ipython.org/github/leouieda/geofisica1/blob/master/notebooks/3-isostasia-anomalia-bouguer.ipynb) |
+| 4    | Estudos de caso (Havaí, Japão e Brasil) | [Estudos de caso](http://nbviewer.ipython.org/github/leouieda/geofisica1/blob/master/notebooks/4-estudos-de-caso.ipynb) |
+| 5    | Modelagem direta para testar hipóteses geológicas | [Modelagem direta](http://nbviewer.ipython.org/github/leouieda/geofisica1/blob/master/notebooks/5-modelagem-direta.ipynb) |
+| 6    | Inversão e instabilidade |    |
+| 7    | O campo magnético da Terra e a anomalia magnética de campo total |    |
+| 8    | Transformada de Fourier e transformações de dados |    |
+| 9    | Magnetização induzida e remanente |    |
+| 10   | Deconvolução de Euler |    |
+
 ## Avaliação
 
 A **média final** será a média das notas dos questionários realizados nas
@@ -106,34 +125,7 @@ Reid, A. (2012), Forgotten truths, myths and sacred cows of Potential Fields
 Geophysics - II, in SEG Technical Program Expanded Abstracts 2012, pp. 1–3,
 Society of Exploration Geophysicists.
 
-
 **Se não tiverem acesso a essas referências, entrem em contato comigo.**
-
-## Cronograma
-
-Esse cronograma ainda não é definitivo. Provavelmente sofrerá alterações ao
-longo do semestre.
-
-| Semana | Tema                                 | Prática   |
-|:----:|:-------------------------------------|:----------:|
-| 1    | Apresentação do curso e introdução a geofísica  |   |
-| 2    | A gravidade da Terra, grids, interpolação e mapas  | [mapas, interpolação e gravidade](http://nbviewer.ipython.org/github/leouieda/geofisica1/blob/master/praticas/1-mapas-interpolacao-gravidade.ipynb) ([exemplo de solução](http://nbviewer.ipython.org/github/leouieda/geofisica1/blob/master/praticas/1-mapas-interpolacao-gravidade-solucao.ipynb))  |
-| 3    | A Terra Normal e o distúrbio da gravidade | [Terra Normal e distúrbio da gravidade](http://nbviewer.ipython.org/github/leouieda/geofisica1/blob/master/praticas/2-terra-normal-e-disturbio.ipynb) ([exemplo de solução](http://nbviewer.ipython.org/github/leouieda/geofisica1/blob/master/praticas/2-terra-normal-e-disturbio-solucao.ipynb))   |
-| 4    | Isostasia, o efeito da topografia e a anomalia Bouguer | [Isostasia e Bouguer](http://nbviewer.ipython.org/github/leouieda/geofisica1/blob/master/praticas/3-isostasia-anomalia-bouguer.ipynb)  ([exemplo de solução](http://nbviewer.ipython.org/github/leouieda/geofisica1/blob/master/praticas/3-isostasia-anomalia-bouguer-solucao.ipynb))  |
-| 5    | Estudos de caso (Havaí, Japão e Brasil) | [Estudos de caso](http://nbviewer.ipython.org/github/leouieda/geofisica1/blob/master/praticas/4-estudos-de-caso.ipynb)   ([exemplo de solução](http://nbviewer.ipython.org/github/leouieda/geofisica1/blob/master/praticas/4-estudos-de-caso-solucao.ipynb)) |
-| 6    | Modelagem direta para testar hipóteses geológicas | [Modelagem direta](http://nbviewer.ipython.org/github/leouieda/geofisica1/blob/master/praticas/5-modelagem-direta.ipynb)  ([exemplo de solução](http://nbviewer.ipython.org/github/leouieda/geofisica1/blob/master/praticas/5-modelagem-direta-solucao.ipynb))  |
-| 7    | Inversão e instabilidade |    |
-| 8    | O campo magnético da Terra e a anomalia magnética de campo total |    |
-| 9    | Transformada de Fourier e transformações de dados |    |
-| 10   | Magnetização induzida e remanente |    |
-| 11   | Deconvolução de Euler |    |
-
-
-## License
-
-<a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br /><span xmlns:dct="http://purl.org/dc/terms/" href="http://purl.org/dc/dcmitype/Text" property="dct:title" rel="dct:type">"Material didático da disciplina Geofísica 1"</span>
-by <a xmlns:cc="http://creativecommons.org/ns#" href="http://www.leouieda.com/" property="cc:attributionName" rel="cc:attributionURL">Leonardo Uieda</a> is licensed under a
-<a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.
 
 ## Material
 
@@ -147,3 +139,9 @@ O material é atualizado a cada ano. Versões ao final de cada ano são marcadas
 com um *tag* e podem ser vistas em:
 
 https://github.com/leouieda/geofisica1/releases
+
+## License
+
+<a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br /><span xmlns:dct="http://purl.org/dc/terms/" href="http://purl.org/dc/dcmitype/Text" property="dct:title" rel="dct:type">"Material didático da disciplina Geofísica 1"</span>
+by <a xmlns:cc="http://creativecommons.org/ns#" href="http://www.leouieda.com/" property="cc:attributionName" rel="cc:attributionURL">Leonardo Uieda</a> is licensed under a
+<a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.
