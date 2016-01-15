@@ -72,8 +72,8 @@ longo do semestre.
 | 4    | Estudos de caso (Havaí, Japão, Brasil, Bahia de Hudson) | [notebook](http://nbviewer.ipython.org/github/leouieda/geofisica1/blob/master/notebooks/4-estudos-de-caso.ipynb)  / [questões](https://github.com/leouieda/geofisica1/raw/master/questoes/4-estudos-de-caso.pdf) |
 | 5    | Modelagem direta para testar hipóteses geológicas | [notebook](http://nbviewer.ipython.org/github/leouieda/geofisica1/blob/master/notebooks/5-modelagem-direta.ipynb)  / [questões](https://github.com/leouieda/geofisica1/raw/master/questoes/5-modelagem-direta.pdf) |
 | 6    | O campo magnético da Terra, IGRF e a anomalia magnética de campo total | [notebook](http://nbviewer.ipython.org/github/leouieda/geofisica1/blob/master/notebooks/6-igrf-anomalia-campo-total.ipynb)  / [questões](https://github.com/leouieda/geofisica1/raw/master/questoes/6-igrf-anomalia-campo-total.pdf) |
-| 7    | Transformada de Fourier |    |
-| 8    | Transformações: derivada total, redução ao polo, continuação para cima |    |
+| 7    | Transformada de Fourier | [notebook](http://nbviewer.ipython.org/github/leouieda/geofisica1/blob/master/notebooks/7-transformada-de-fourier.ipynb) / [questões](https://github.com/leouieda/geofisica1/raw/master/questoes/7-transformada-de-fourier.pdf) |
+| 8    | Transformações: derivada total, redução ao polo, continuação para cima |  [notebook](http://nbviewer.ipython.org/github/leouieda/geofisica1/blob/master/notebooks/8-transformacoes.ipynb) / [questões](https://github.com/leouieda/geofisica1/raw/master/questoes/8-transformacoes.pdf)   |
 | 9    | Magnetização remanente |    |
 | --   | Tópicos especiais: Inversão |    |
 | --   | Tópicos especiais: Deconvolução de Euler |    |
