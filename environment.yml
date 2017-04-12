@@ -1,0 +1,15 @@
+name: geofisica1
+channels:
+    - conda-forge
+    - defaults
+dependencies:
+    - python=2.7
+    - numpy
+    - scipy
+    - jupyter
+    - mayavi
+    - matplotlib=1.5
+    - fatiando=0.5
+    - basemap
+    - ipywidgets=5.2.2
+    - seaborn
